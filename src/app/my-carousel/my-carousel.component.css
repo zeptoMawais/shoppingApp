@@ -1,0 +1,146 @@
+.ibox{
+  clear: both;
+  margin-bottom: 25px;
+  margin-top: 0;
+  padding: 0;
+}
+.product-box {
+    padding: 0;
+    border: 1px solid #e7eaec;
+}
+.ibox-content {
+    clear: both;
+    background-color: #ffffff;
+    color: inherit;
+    /* padding: 15px 20px 20px 20px;
+    border-color: #e7eaec;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 1px 0; */
+}
+.product-imitation {
+    text-align: center;
+    padding: 90px 0;
+    background-color: #f8f8f9;
+    color: #bebec3;
+    font-weight: 600;
+}
+.product-desc {
+    padding: 20px;
+    position: relative;
+}
+.product-price {
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #1ab394;
+    padding: 6px 12px;
+    position: absolute;
+    top: -32px;
+    right: 0;
+}
+.text-muted {
+    color: #888888;
+}
+.product-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #676a6c;
+    display: block;
+    margin: 2px 0 5px 0;
+}
+.m-t-xs {
+    margin-top: 5px;
+}
+.small, small {
+    font-size: 85%;
+    color: dimgray;
+}
+.m-t {
+    margin-top: 15px;
+}
+.m-b {
+    margin-bottom: 15px;
+}
+.m-r {
+  margin-right: 15px;
+}
+.m-l {
+  margin-left: 15px;
+}
+.borderedBox{
+  border: 1px solid #e3e3e3;
+}
+.productCount{
+  font-size: 9px;
+  padding-top: 50px;
+  color: gray;
+}
+.productLogo{
+  padding-top: 14px;
+}
+.secondThird-product{
+  border-top: none;
+  border-right: none;
+}
+.first-product{
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+.sliderIcon{
+  margin-top: 220px;
+  font-size: 50px;
+  padding-left: 30px;
+  color: #e3e3e3;
+}
+
+.heading-name{
+  margin-left: 100px;
+}
+.featured-product-pirce{
+  color: #819a49;
+  font-weight: bold;
+}
+.featured-product-heart{
+  padding-left: 45px;
+  padding-right: 15px;
+}
+.featured-product-stars{
+  margin-right: 5px;
+}
+.featured-product-sliderIcon{
+  margin-top: 150px;
+  font-size: 50px;
+  padding-left: 30px;
+  color: #e3e3e3;
+}
+.div-start{
+  margin-top: 50px;
+}
+.div-start-title{
+  margin-top: 40px;
+}
+hr{
+  margin-top: 3rem !important;
+}
+.video-thumbnail{
+  float: right;
+}
+.p-l-fifty{
+  padding-left: 50px;
+}
+.color-gray-text-small{
+  color: dimgray;
+}
+.m-t-thirty{
+  margin-top: 30px;
+}
+.p-t-two-hundred{
+  padding-top: 200px;
+}
+.p-t-fifty{
+  padding-top:50px ;
+}
+
