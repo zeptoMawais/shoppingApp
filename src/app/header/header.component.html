@@ -5,7 +5,7 @@
     </div>
     <div class="col-md-6">
         <div ngbDropdown class="d-inline-block">
-          <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle></button>
+          <button class="btn dropdown-btn" id="dropdownBasic1" ngbDropdownToggle></button>
           <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
             <button class="dropdown-item" (mouseenter)="isShopCollapsed = !isShopCollapsed" (mouseleave)="isShopCollapsed = !isShopCollapsed" [attr.aria-expanded]="!isShopCollapsed" aria-controls="shops">Shops</button>
             <button class="dropdown-item" (mouseenter)="isLocationCollapsed = !isLocationCollapsed" (mouseleave)="isLocationCollapsed = !isLocationCollapsed" [attr.aria-expanded]="!isLocationCollapsed" aria-controls="shops-location">Shops Location</button>
@@ -244,7 +244,7 @@
           </div>
         </div>
         <div class="col-md-2">
-          <a class="p-l-fifty"><i class="fa fa-bars"></i> SHOPS MENU</a>
+          <a class="p-l-25"><i class="fa fa-bars"></i> SHOPS MENU</a>
         </div>
         <div class="col-md-2">
           <div>

@@ -1,0 +1,117 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <ol class="breadcrumb">
+        <li>
+          <a>CATEGORY 1</a>
+        </li>
+        <li>
+          <a>PRODUCTS</a>
+        </li>
+      </ol>
+    </div>
+  </div>
+  <div class="row" style="height: auto">
+    <div class="col">
+      <div class="left-side">
+        <div class="row">
+          <div class="col">
+            <h6 class="p-30 p-b-0">PRICE RANGE</h6>
+            <div class="slidecontainer">
+              <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            </div>
+            <button type="button" class="btn btn-light price-min-range-btn">0$</button>
+            <button type="button" class="btn btn-light price-max-range-btn">500$</button>
+          </div>
+        </div>
+        <hr>
+        <h6 class="p-30 p-b-0">SHOP LOCATION</h6>
+        <h6 class="p-30 p-b-0 t-c-gray">WITHIN A RADIUS</h6>
+        <div class="slidecontainer">
+          <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        </div>
+        <div class="row m-t">
+          <div class="col-md-3">
+            <h6 class="range-value-first">0KM</h6>
+          </div>
+          <div class="col-md-3"><h6 class="range-value-first">1KM</h6></div>
+          <div class="col-md-3"><h6 class="range-value-first">5KM</h6></div>
+          <div class="col-md-3 t-a-r"><h6 class="range-value-last">50KM</h6></div>
+
+
+        </div>
+        <div class="input-group mb-3">
+          <div ngbDropdown class="d-inline-block">
+            <button class="btn dropdown-btn" id="dropdownBasic1" ngbDropdownToggle></button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+
+                <a href="javascript:void(0)" class="dropdown-item">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <i class="fa fa-map-marker shop-menu-icon"></i>
+                    </div>
+                    <div class="col-md-8">
+                      <p class="shop-menu-product-name">Whiner and Diner</p>
+                      <p class="shop-menu-product-address">Stamfor, CT</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="javascript:void(0)" class="dropdown-item">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <i class="fa fa-map-marker shop-menu-icon"></i>
+                    </div>
+                    <div class="col-md-8">
+                      <p class="shop-menu-product-name">East Albert</p>
+                      <p class="shop-menu-product-address">Lake Receetown</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="javascript:void(0)" class="dropdown-item">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <i class="fa fa-map-marker shop-menu-icon"></i>
+                    </div>
+                    <div class="col-md-8">
+                      <p class="shop-menu-product-name">Whiner and Diner</p>
+                      <p class="shop-menu-product-address">Stamfor, CT</p>
+                    </div>
+                  </div>
+                </a>
+
+
+            </div>
+          </div>
+          <div class="input-group-prepend">
+            <span class="input-group-text location-input-icon" id="inputGroup-sizing-default"><i class="fa fa-map-marker"></i></span>
+          </div>
+          <input type="text" class="form-control location-input" placeholder="Enter Location" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col">
+            <h6 class="p-30 p-b-0">PRODUCT TAGS</h6>
+            <button class="btn tag-btn">TAG ONE</button>
+            <button class="btn tag-btn">TAG TWO</button>
+            <button class="btn tag-btn">TAG ONE</button>
+            <button class="btn tag-btn">TAG ONE</button>
+            <button class="btn tag-btn">TAG ONE</button>
+            <button class="btn tag-btn">TAG ONE</button>
+          </div>
+        </div>
+        <hr>
+        <h6 class="p-30 p-b-0">PRODUCT STATUS</h6>
+        <div class="checkbox checkbox-primary m-20">
+          <input type="checkbox" id="inlineCheckbox1" value="option1" checked="">
+          <label for="inlineCheckbox1"> PERMOTION </label>
+        </div>
+        <div class="checkbox checkbox-primary m-20">
+          <input type="checkbox" id="inlineCheckbox2" value="option1" checked="">
+          <label for="inlineCheckbox2"> CLEARANCE </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

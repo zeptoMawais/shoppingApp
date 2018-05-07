@@ -1,75 +1,253 @@
 <div class="container-fluid">
-  <div class="row">
-    <div class="col">
-      <ol class="breadcrumb">
-        <li>
-          <a>CATEGORY 1</a>
-        </li>
-        <li>
-          <a>PRODUCTS</a>
-        </li>
-      </ol>
-    </div>
-  </div>
-  <div class="row" style="height: 900px">
-    <div class="col-4">
-      <div class="left-side">
+  <div class="row" style="height: auto">
+    <div class="col" >
+      <div class="main-container">
+        <!--header row to show sorting and pagination-->
         <div class="row">
-          <div class="col">
-            <h6 class="p-30 p-b-0">PRICE RANGE</h6>
-            <div class="slidecontainer">
-              <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+          <div class="col-8">
+            <button type="button" class="btn btn-light p-15 text-lightgrey">Newest<i class="fa fa-angle-down p-l-5"></i></button>
+            <div ngbDropdown class="d-inline-block p-15">
+              <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Sort by</button>
+              <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                <button class="dropdown-item">Product</button>
+                <button class="dropdown-item">Shop Location</button>
+                <button class="dropdown-item">Shop</button>
+              </div>
             </div>
-            <button type="button" class="btn btn-light price-min-range-btn">0$</button>
-            <button type="button" class="btn btn-light price-max-range-btn">500$</button>
+          </div>
+          <div class="col-4">
+            <nav aria-label="Page navigation example" class="p-15">
+              <ul class="pagination justify-content-end">
+                <li class="page-item">
+                  <a class="page-link text-lightgrey" href="javascript:void(0)" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link text-lightgrey" href="javascript:void(0)">1</a></li>
+                <li class="page-item"><a class="page-link text-lightgrey" href="javascript:void(0)">2</a></li>
+                <li class="page-item"><a class="page-link text-lightgrey" href="javascript:void(0)">3</a></li>
+                <li class="page-item">
+                  <a class="page-link text-lightgrey" href="javascript:void(0)" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
-        <hr>
-        <h6 class="p-30 p-b-0">SHOP LOCATION</h6>
-        <h6 class="p-30 p-b-0 t-c-gray">WITHIN A RADIUS</h6>
-        <div class="slidecontainer">
-          <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-        </div>
-        <div class="row m-t">
-          <div class="col-md-3">
-            <h6 class="range-value-first">0KM</h6>
-          </div>
-          <div class="col-md-3"><h6 class="range-value-first">1KM</h6></div>
-          <div class="col-md-3"><h6 class="range-value-first">5KM</h6></div>
-          <div class="col-md-3 t-a-r"><h6 class="range-value-last">50KM</h6></div>
-
-
-        </div>
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <span class="input-group-text location-input-icon" id="inputGroup-sizing-default"><i class="fa fa-map-marker"></i></span>
-          </div>
-          <input type="text" class="form-control location-input" placeholder="Enter Location" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-        </div>
-        <hr>
+        <!--item product row 1-->
         <div class="row">
-          <div class="col">
-            <h6 class="p-30 p-b-0">PRODUCT TAGS</h6>
-            <button class="btn tag-btn">TAG ONE</button>
-            <button class="btn tag-btn">TAG TWO</button>
-            <button class="btn tag-btn">TAG ONE</button>
-            <button class="btn tag-btn">TAG ONE</button>
-            <button class="btn tag-btn">TAG ONE</button>
-            <button class="btn tag-btn">TAG ONE</button>
+          <div class="col-md-4 p-l-35">
+            <div class="row" style="height: 50%">
+              <img src="../../assets/img/8.jpg" class="img-fluid" alt="headfone">
+            </div>
+            <div class="row" style="height: 50%">
+              <div class="col-md-12">
+                <a href="javascript:void(0)" class="product-name m-t"> PRODUCT ONE WITH SHORT DESCRIPTION</a>
+                <div class="row">
+                  <div class="col-2">
+                    <i class="material-icons text-lightgrey">store_mall_directory</i>
+                  </div>
+                  <div class="col-10">
+                  <h6 class="product-search-name">WHINER AND DINER</h6>
+
+                  </div>
+                </div>
+                <div>
+                  <h6 > <span class="featured-product-pirce">599.00 $</span> <i class="fa fa-heart-o featured-product-heart m-t" style="color: lightgrey"></i><i class="fa fa-shopping-cart" style="color: lightgrey"></i></h6>
+                </div>
+              </div>
+            </div>
           </div>
+          <div class="col-md-4 p-l-35">
+            <div class="row" style="height: 50%">
+              <img src="../../assets/img/8.jpg" class="img-fluid" alt="headfone">
+            </div>
+            <div class="row" style="height: 50%">
+              <div class="col-md-12">
+                <a href="javascript:void(0)" class="product-name m-t"> PRODUCT ONE WITH SHORT DESCRIPTION</a>
+                <div class="row">
+                  <div class="col-2">
+                    <i class="material-icons text-lightgrey">store_mall_directory</i>
+                  </div>
+                  <div class="col-10">
+                  <h6 class="product-search-name">WHINER AND DINER</h6>
+
+                  </div>
+                </div>
+                <div>
+                  <h6 > <span class="featured-product-pirce">599.00 $</span> <i class="fa fa-heart-o featured-product-heart m-t" style="color: lightgrey"></i><i class="fa fa-shopping-cart" style="color: lightgrey"></i></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 p-l-35">
+            <div class="row" style="height: 50%">
+              <img src="../../assets/img/8.jpg" class="img-fluid" alt="headfone">
+            </div>
+            <div class="row" style="height: 50%">
+              <div class="col-md-12">
+                <a href="javascript:void(0)" class="product-name m-t"> PRODUCT ONE WITH SHORT DESCRIPTION</a>
+                <div class="row">
+                  <div class="col-2">
+                    <i class="material-icons text-lightgrey">store_mall_directory</i>
+                  </div>
+                  <div class="col-10">
+                  <h6 class="product-search-name">WHINER AND DINER</h6>
+
+                  </div>
+                </div>
+                <div>
+                  <h6 > <span class="featured-product-pirce">599.00 $</span> <i class="fa fa-heart-o featured-product-heart m-t" style="color: lightgrey"></i><i class="fa fa-shopping-cart" style="color: lightgrey"></i></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <hr>
-        <h6 class="p-30 p-b-0">PRODUCT STATUS</h6>
-        <div class="checkbox checkbox-primary m-20">
-          <input type="checkbox" id="inlineCheckbox1" value="option1" checked="">
-          <label for="inlineCheckbox1"> PERMOTION </label>
+        <!--item product row 2-->
+        <div class="row">
+          <div class="col-md-4 p-l-35">
+            <div class="row" style="height: 50%">
+              <img src="../../assets/img/8.jpg" class="img-fluid" alt="headfone">
+            </div>
+            <div class="row" style="height: 50%">
+              <div class="col-md-12">
+                <a href="javascript:void(0)" class="product-name m-t"> PRODUCT ONE WITH SHORT DESCRIPTION</a>
+                <div class="row">
+                  <div class="col-2">
+                    <i class="material-icons text-lightgrey">store_mall_directory</i>
+                  </div>
+                  <div class="col-10">
+                    <h6 class="product-search-name">WHINER AND DINER</h6>
+
+                  </div>
+                </div>
+                <div>
+                  <h6 > <span class="featured-product-pirce">599.00 $</span> <i class="fa fa-heart-o featured-product-heart m-t" style="color: lightgrey"></i><i class="fa fa-shopping-cart" style="color: lightgrey"></i></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 p-l-35">
+            <div class="row" style="height: 50%">
+              <img src="../../assets/img/8.jpg" class="img-fluid" alt="headfone">
+            </div>
+            <div class="row" style="height: 50%">
+              <div class="col-md-12">
+                <a href="javascript:void(0)" class="product-name m-t"> PRODUCT ONE WITH SHORT DESCRIPTION</a>
+                <div class="row">
+                  <div class="col-2">
+                    <i class="material-icons text-lightgrey">store_mall_directory</i>
+                  </div>
+                  <div class="col-10">
+                    <h6 class="product-search-name">WHINER AND DINER</h6>
+
+                  </div>
+                </div>
+                <div>
+                  <h6 > <span class="featured-product-pirce">599.00 $</span> <i class="fa fa-heart-o featured-product-heart m-t" style="color: lightgrey"></i><i class="fa fa-shopping-cart" style="color: lightgrey"></i></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 p-l-35">
+            <div class="row" style="height: 50%">
+              <img src="../../assets/img/8.jpg" class="img-fluid" alt="headfone">
+            </div>
+            <div class="row" style="height: 50%">
+              <div class="col-md-12">
+                <a href="javascript:void(0)" class="product-name m-t"> PRODUCT ONE WITH SHORT DESCRIPTION</a>
+                <div class="row">
+                  <div class="col-2">
+                    <i class="material-icons text-lightgrey">store_mall_directory</i>
+                  </div>
+                  <div class="col-10">
+                    <h6 class="product-search-name">WHINER AND DINER</h6>
+
+                  </div>
+                </div>
+                <div>
+                  <h6 > <span class="featured-product-pirce">599.00 $</span> <i class="fa fa-heart-o featured-product-heart m-t" style="color: lightgrey"></i><i class="fa fa-shopping-cart" style="color: lightgrey"></i></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <div class="checkbox checkbox-primary m-20">
-          <input type="checkbox" id="inlineCheckbox2" value="option1" checked="">
-          <label for="inlineCheckbox2"> CLEARANCE </label>
+        <!--item product row 3-->
+        <div class="row">
+          <div class="col-md-4 p-l-35">
+            <div class="row" style="height: 50%">
+              <img src="../../assets/img/8.jpg" class="img-fluid" alt="headfone">
+            </div>
+            <div class="row" style="height: 50%">
+              <div class="col-md-12">
+                <a href="javascript:void(0)" class="product-name m-t"> PRODUCT ONE WITH SHORT DESCRIPTION</a>
+                <div class="row">
+                  <div class="col-2">
+                    <i class="material-icons text-lightgrey">store_mall_directory</i>
+                  </div>
+                  <div class="col-10">
+                    <h6 class="product-search-name">WHINER AND DINER</h6>
+
+                  </div>
+                </div>
+                <div>
+                  <h6 > <span class="featured-product-pirce">599.00 $</span> <i class="fa fa-heart-o featured-product-heart m-t" style="color: lightgrey"></i><i class="fa fa-shopping-cart" style="color: lightgrey"></i></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 p-l-35">
+            <div class="row" style="height: 50%">
+              <img src="../../assets/img/8.jpg" class="img-fluid" alt="headfone">
+            </div>
+            <div class="row" style="height: 50%">
+              <div class="col-md-12">
+                <a href="javascript:void(0)" class="product-name m-t"> PRODUCT ONE WITH SHORT DESCRIPTION</a>
+                <div class="row">
+                  <div class="col-2">
+                    <i class="material-icons text-lightgrey">store_mall_directory</i>
+                  </div>
+                  <div class="col-10">
+                    <h6 class="product-search-name">WHINER AND DINER</h6>
+
+                  </div>
+                </div>
+                <div>
+                  <h6 > <span class="featured-product-pirce">599.00 $</span> <i class="fa fa-heart-o featured-product-heart m-t" style="color: lightgrey"></i><i class="fa fa-shopping-cart" style="color: lightgrey"></i></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 p-l-35">
+            <div class="row" style="height: 50%">
+              <img src="../../assets/img/8.jpg" class="img-fluid" alt="headfone">
+            </div>
+            <div class="row" style="height: 50%">
+              <div class="col-md-12">
+                <a href="javascript:void(0)" class="product-name m-t"> PRODUCT ONE WITH SHORT DESCRIPTION</a>
+                <div class="row">
+                  <div class="col-2">
+                    <i class="material-icons text-lightgrey">store_mall_directory</i>
+                  </div>
+                  <div class="col-10">
+                    <h6 class="product-search-name">WHINER AND DINER</h6>
+
+                  </div>
+                </div>
+                <div>
+                  <h6 > <span class="featured-product-pirce">599.00 $</span> <i class="fa fa-heart-o featured-product-heart m-t" style="color: lightgrey"></i><i class="fa fa-shopping-cart" style="color: lightgrey"></i></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
-    <div class="col-9"></div>
   </div>
 </div>
