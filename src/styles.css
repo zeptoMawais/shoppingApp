@@ -364,5 +364,8 @@ hr{
   color: lightgray;
   padding-left: 10px;
 }
-
+.img-comment{
+  max-width: 40px;
+  margin-right: 30%;
+}
 

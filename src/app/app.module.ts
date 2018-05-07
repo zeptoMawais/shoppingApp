@@ -14,6 +14,9 @@ import { FilterBarComponent } from './filter-bar/filter-bar.component';
 import { ProductSearchResultComponent } from './product-search-result/product-search-result.component';
 import { ShopSearchResultComponent } from './shop-search-result/shop-search-result.component';
 import { ShopDiscriptionComponent } from './shop-discription/shop-discription.component';
+import { RatingComponent } from './rating/rating.component';
+import { AboutStoreComponent } from './about-store/about-store.component';
+import { ReviewsComponent } from './reviews/reviews.component';
 
 
 @NgModule({
@@ -26,7 +29,10 @@ import { ShopDiscriptionComponent } from './shop-discription/shop-discription.co
     FilterBarComponent,
     ProductSearchResultComponent,
     ShopSearchResultComponent,
-    ShopDiscriptionComponent
+    ShopDiscriptionComponent,
+    RatingComponent,
+    AboutStoreComponent,
+    ReviewsComponent
   ],
   imports: [
     BrowserModule,

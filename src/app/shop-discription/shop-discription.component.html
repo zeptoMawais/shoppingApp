@@ -1,10 +1,77 @@
 <app-header></app-header>
-<div class="container-fluid">
-  <div class="row m-t m-b">
-
+<div class="container container-height border m-t">
+  <div class="row">
+    <div class="col-4">
+      <div class="container-fluid border m-t">
+        <img src="../../assets/img/shopLogo.png" class="img-fluid" alt="Responsive image">
+      </div>
+    </div>
+    <div class="col-8 m-t">
+      <div class="row">
+        <div class="col text-align-right">
+          <p class="m-b-0">Open hours</p>
+          <p class="m-b-0">10:00 AM - 12:00 PM</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-7">
+          <h1 class="align-bottom">Whiner and Diner</h1>
+        </div>
+        <div class="col-5 text-align-right">
+          <p class="text-danger m-b-0 close-now-font">CLOSED NOW</p>
+        </div>
+      </div>
+      <div class="row m-t">
+        <div class="col-1">
+          <i class="material-icons">location_on</i>
+        </div>
+        <div class="col-11">
+          <h6>5097 Alexandrine Divide Suite 427 | 2275 Orders done | On OpenBusiness since 2008</h6>
+        </div>
+      </div>
+      <div class="row m-t">
+        <div class="col-3">
+          <app-rating></app-rating>
+        </div>
+        <div class="col-2">
+        <h6 class="text-lightgrey">(2548)</h6>
+        </div>
+      </div>
+      <div class="row m-t text-lightgrey">
+        <div class="col">
+          <h6>Short description Basically, the kit consists of more than a hundred ready-to-use elements that you can</h6>
+        </div>
+      </div>
+      <div class="row m-t">
+        <div class="col-4">
+          <button class="btn btn-light display-inherit text-lightgrey"><i class="material-icons">favorite_border</i>Favorite shop(1264)</button>
+        </div>
+        <div class="col-5">
+          <button class="btn btn-light color-blue"><i class="fa fa-facebook-official p-r-5"></i>Share</button>
+          <button class="btn btn-light color-red"><i class="fa fa-pinterest-square p-r-5"></i>Pin it</button>
+          <button class="btn btn-light"><i class="fa fa-twitter-square p-r-5 color-tweet"></i>Tweet</button>
+        </div>
+        <div class="col-3">
+          <button class="btn btn-light display-inherit text-lightgrey"><i class="material-icons">person</i>Contact Seller</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row m-t">
+    <button class="btn link-button active m-l-5 m-r-5" (click)="showProductComponent()">PRODUCTS</button>
+    <button class="btn link-button m-r-5" (click)="showAboutStoreComponent()">ABOUT STORE</button>
+    <button class="btn link-button" (click)="showReviewsComponent()">REVIEWS</button>
   </div>
 </div>
-<app-products></app-products>
+<div *ngIf="productComponentStatus === 'show'">
+  <app-products></app-products>
+</div>
+<div *ngIf="aboutStoreComponentStatus === 'show'">
+  <app-about-store></app-about-store>
+</div>
+<div *ngIf="reviewsComponentStatus === 'show'">
+  <app-reviews></app-reviews>
+</div>
 <div class="container-fluid">
   <div class="row m-t m-b-40">
   </div>
