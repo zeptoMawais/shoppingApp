@@ -19,6 +19,7 @@ import { AboutStoreComponent } from './about-store/about-store.component';
 import { ReviewsComponent } from './reviews/reviews.component';
 import { ProductDesciptionComponent } from './product-desciption/product-desciption.component';
 import { SingleProductComponent } from './single-product/single-product.component';
+import { SampleComponent } from './sample/sample.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { SingleProductComponent } from './single-product/single-product.componen
     AboutStoreComponent,
     ReviewsComponent,
     ProductDesciptionComponent,
-    SingleProductComponent
+    SingleProductComponent,
+    SampleComponent
   ],
   imports: [
     BrowserModule,

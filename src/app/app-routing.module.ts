@@ -13,11 +13,27 @@ import { AboutStoreComponent } from './about-store/about-store.component';
 import { ReviewsComponent } from './reviews/reviews.component';
 import { ProductDesciptionComponent } from './product-desciption/product-desciption.component';
 import { SingleProductComponent } from './single-product/single-product.component';
-
+import { SampleComponent } from './sample/sample.component';
 const routes: Routes = [
+  {
+    path:'',
+    component:SampleComponent
+  },
   {
     path:'main',
     component:MyCarouselComponent
+  },
+  {
+    path:'productsearchresult',
+    component:ProductSearchResultComponent
+  },
+  {
+    path:'shopsearchresult',
+    component:ShopSearchResultComponent
+  },
+  {
+    path:'shopdescription',
+    component:ShopDiscriptionComponent
   },
   {
     path:'productdescription',
