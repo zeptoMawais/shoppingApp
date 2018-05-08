@@ -1,0 +1,54 @@
+/* img{
+  height: 250px;
+  width: 335px;
+  object-fit: contain;
+} */
+.m-t-10{
+  margin-top: 10%;
+}
+.text-lightgrey{
+  color: lightgrey;
+}
+.theme-btn{
+  background-color: #819a49;
+  color: white;
+}
+.display-inline-flex{
+  display: inline-flex;
+}
+.color-blue{
+  color: blue;
+}
+.color-red{
+  color: red;
+}
+.color-tweet{
+  color: deepskyblue;
+}
+.p-r-5{
+  padding-right: 5px;
+}
+.height-0{
+  height: 45px !important;
+}
+.float-right-date{
+  float: right;
+}
+.gray-btn{
+  background-color: gray;
+  color: white;
+}
+ul
+{
+  list-style-type: none;
+}
+.add-comment-btn{
+  background-color: #819a49;
+  color: white;
+}
+.m-l-10px{
+  margin-left: 10px;
+}
+.p-l-0{
+  padding-left: 0px;
+}

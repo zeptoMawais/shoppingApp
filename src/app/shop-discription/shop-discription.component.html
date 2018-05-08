@@ -52,7 +52,7 @@
           <button class="btn btn-light"><i class="fa fa-twitter-square p-r-5 color-tweet"></i>Tweet</button>
         </div>
         <div class="col-3">
-          <button class="btn btn-light display-inherit text-lightgrey"><i class="material-icons">person</i>Contact Seller</button>
+          <button class="btn btn-light display-inherit text-lightgrey"  data-toggle="modal" data-target="#contactSeller"><i class="material-icons">person</i>Contact Seller</button>
         </div>
       </div>
     </div>
@@ -77,3 +77,35 @@
   </div>
 </div>
 <app-footer></app-footer>
+<div class="modal fade" id="contactSeller" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title m-l-30" id="exampleModalLabel">Contact Seller</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <i class="fa fa-phone m-l-30 p-r-10"></i>
+          <h6>SHOP PHONE NUMBER</h6>
+        </div>
+        <div class="row">
+          <h6 class="m-l-40">(530) 3214552</h6>
+        </div>
+        <form>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Subject" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" placeholder="Text your message here..." id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-rounded add-comment-btn">SEND MESSAGE</button>
+      </div>
+    </div>
+  </div>
+</div>

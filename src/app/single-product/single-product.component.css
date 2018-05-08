@@ -1,0 +1,24 @@
+.featured-product-pirce{
+  color: #819a49;
+  font-weight: bold;
+}
+.featured-product-heart{
+  padding-left: 45px;
+  padding-right: 15px;
+}
+.featured-product-stars{
+  margin-right: 5px;
+}
+.featured-product-sliderIcon{
+  margin-top: 150px;
+  font-size: 50px;
+  padding-left: 30px;
+  color: #e3e3e3;
+}
+.product-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #676a6c;
+    display: block;
+    margin: 2px 0 5px 0;
+}
