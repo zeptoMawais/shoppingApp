@@ -20,6 +20,8 @@ import { ReviewsComponent } from './reviews/reviews.component';
 import { ProductDesciptionComponent } from './product-desciption/product-desciption.component';
 import { SingleProductComponent } from './single-product/single-product.component';
 import { SampleComponent } from './sample/sample.component';
+import { CartComponent } from './cart/cart.component';
+import { HeaderSecondComponent } from './header-second/header-second.component';
 
 
 @NgModule({
@@ -38,7 +40,9 @@ import { SampleComponent } from './sample/sample.component';
     ReviewsComponent,
     ProductDesciptionComponent,
     SingleProductComponent,
-    SampleComponent
+    SampleComponent,
+    CartComponent,
+    HeaderSecondComponent
   ],
   imports: [
     BrowserModule,

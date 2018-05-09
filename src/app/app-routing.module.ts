@@ -14,6 +14,8 @@ import { ReviewsComponent } from './reviews/reviews.component';
 import { ProductDesciptionComponent } from './product-desciption/product-desciption.component';
 import { SingleProductComponent } from './single-product/single-product.component';
 import { SampleComponent } from './sample/sample.component';
+import { CartComponent } from './cart/cart.component';
+import { HeaderSecondComponent } from './header-second/header-second.component';
 const routes: Routes = [
   {
     path:'',
@@ -38,6 +40,14 @@ const routes: Routes = [
   {
     path:'productdescription',
     component:ProductDesciptionComponent
+  },
+  {
+    path:'cart',
+    component:CartComponent
+  },
+  {
+    path:'sh',
+    component:HeaderSecondComponent
   }
 
 ];

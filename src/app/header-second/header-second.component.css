@@ -1,0 +1,63 @@
+.rounded-btn{
+  border-radius: 30px;
+  padding-left: 30px;
+  padding-right: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.btn-theme-green{
+  background-color: #819a49;
+  color: #fff;
+}
+.inner-circle{
+  border-radius: 56px;
+    background-color: white;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.user-img-icon{
+  max-width: 40px;
+  margin-right: 5px;
+}
+hr{
+  margin-top: 0px !important;
+}
+.rounded-container{
+  border-radius: 30px;
+  padding-left: 0px;
+}
+.theme-btn{
+  background-color: #819a49;
+  color: white;
+  border-radius:30px;
+}
+.light-btn{
+  background-color: white;
+  border: none;
+  border-radius:30px;
+}
+/* .light-btn:hover{
+  background-color: #819a49;
+  color: white;
+  border-radius:30px;
+} */
+.light-btn:active{
+  background-color: #819a49;
+  color: white;
+  border-radius:30px;
+}
+.light-btn:focus{
+  background-color: #819a49;
+  color: white;
+  border: none;
+}
+.text-padding{
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
