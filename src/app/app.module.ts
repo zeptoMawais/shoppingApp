@@ -22,6 +22,8 @@ import { SingleProductComponent } from './single-product/single-product.componen
 import { SampleComponent } from './sample/sample.component';
 import { CartComponent } from './cart/cart.component';
 import { HeaderSecondComponent } from './header-second/header-second.component';
+import { ShippingComponent } from './shipping/shipping.component';
+import { PaymentComponent } from './payment/payment.component';
 
 
 @NgModule({
@@ -42,7 +44,9 @@ import { HeaderSecondComponent } from './header-second/header-second.component';
     SingleProductComponent,
     SampleComponent,
     CartComponent,
-    HeaderSecondComponent
+    HeaderSecondComponent,
+    ShippingComponent,
+    PaymentComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,26 @@
+.paddings{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+}
+.text-align-center{
+  text-align: center;
+}
+.text-padding-h15{
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.border-radius-30px{
+  border-radius: 30px;
+}
+.theme-btn{
+  background-color: #819a49;
+  color: white;
+  border-radius:30px;
+}
+.payment-icon{
+  background-color: white;
+  border: none;
+}

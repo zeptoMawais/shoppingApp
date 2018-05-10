@@ -16,6 +16,8 @@ import { SingleProductComponent } from './single-product/single-product.componen
 import { SampleComponent } from './sample/sample.component';
 import { CartComponent } from './cart/cart.component';
 import { HeaderSecondComponent } from './header-second/header-second.component';
+import { ShippingComponent } from './shipping/shipping.component';
+import { PaymentComponent } from './payment/payment.component';
 const routes: Routes = [
   {
     path:'',
@@ -48,6 +50,14 @@ const routes: Routes = [
   {
     path:'sh',
     component:HeaderSecondComponent
+  },
+  {
+    path:'shipping',
+    component:ShippingComponent
+  },
+  {
+    path:'payment',
+    component:PaymentComponent
   }
 
 ];

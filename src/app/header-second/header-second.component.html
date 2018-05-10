@@ -18,9 +18,20 @@
 <hr>
 <div class="row mt-4">
   <div class="container border rounded-container">
-    <button class="btn theme-btn text-padding">CART</button>
-    <button class="btn light-btn text-padding">DELIVERY</button>
-    <button class="btn light-btn text-padding">PAYMENT</button>
-    <button class="btn light-btn text-padding">RECEIPT</button>
+    <button class="btn light-btn text-padding" (click)='loadCart()'>CART</button>
+    <button class="btn light-btn text-padding" (click)='loadDelivery()'>DELIVERY</button>
+    <button class="btn light-btn text-padding" (click)='loadPayment()'>PAYMENT</button>
+    <button class="btn light-btn text-padding" (click)='loadCart()'>RECEIPT</button>
   </div>
 </div>
+<div *ngIf="cart === 'show'">
+  <app-cart></app-cart>
+</div>
+<div *ngIf="payment === 'show'">
+  <app-payment></app-payment>
+</div>
+<div *ngIf="delivery === 'show'">
+  <app-shipping></app-shipping>
+</div>
+
+<app-footer></app-footer>
