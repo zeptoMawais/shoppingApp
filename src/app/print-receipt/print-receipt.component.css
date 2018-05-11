@@ -1,0 +1,55 @@
+.verticaltext {
+    transform: rotate(-90deg);
+    transform-origin: right, top;
+    -ms-transform: rotate(-90deg);
+    -ms-transform-origin:right, top;
+    -webkit-transform: rotate(-90deg);
+    -webkit-transform-origin:right, top;
+    position: absolute;
+    color: white;
+    margin-top: 70%;
+    margin-left: -20px;
+}
+.theme-color{
+  background-color: #819a49;
+}
+.p-to-15px{
+  padding-top: 15px;
+}
+.p-l-35px{
+  padding-left: 35px;
+}
+.h-150px{
+  height: 150px;
+}
+.m-t-100{
+  margin-top: 100px;
+}
+.theme-btn{
+  background-color: #9FC848;
+  color: white;
+}
+.text-align-right{
+  text-align: right;
+}
+.p-30px{
+  padding: 30px;
+}
+.bottom-border{
+  border-bottom: 2px solid lightgrey;
+}
+.no-right-border{
+  border-right: none !important;
+}
+.no-left-border{
+  border-left: none !important;
+}
+.main-border{
+  border: 5px solid lightgrey;
+}
+.lightgrey-background{
+  background-color: lightgrey;
+}
+.pull-right{
+  float: right;
+}

@@ -21,7 +21,7 @@
     <button class="btn light-btn text-padding" (click)='loadCart()'>CART</button>
     <button class="btn light-btn text-padding" (click)='loadDelivery()'>DELIVERY</button>
     <button class="btn light-btn text-padding" (click)='loadPayment()'>PAYMENT</button>
-    <button class="btn light-btn text-padding" (click)='loadCart()'>RECEIPT</button>
+    <button class="btn light-btn text-padding" (click)='loadReceipt()'>RECEIPT</button>
   </div>
 </div>
 <div *ngIf="cart === 'show'">
@@ -32,6 +32,9 @@
 </div>
 <div *ngIf="delivery === 'show'">
   <app-shipping></app-shipping>
+</div>
+<div *ngIf="receipt === 'show'">
+  <app-thanks></app-thanks>
 </div>
 
 <app-footer></app-footer>

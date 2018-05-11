@@ -24,6 +24,9 @@ import { CartComponent } from './cart/cart.component';
 import { HeaderSecondComponent } from './header-second/header-second.component';
 import { ShippingComponent } from './shipping/shipping.component';
 import { PaymentComponent } from './payment/payment.component';
+import { ThanksComponent } from './thanks/thanks.component';
+import { PrintReceiptComponent } from './print-receipt/print-receipt.component';
+import { CloseCartComponent } from './close-cart/close-cart.component';
 
 
 @NgModule({
@@ -46,7 +49,10 @@ import { PaymentComponent } from './payment/payment.component';
     CartComponent,
     HeaderSecondComponent,
     ShippingComponent,
-    PaymentComponent
+    PaymentComponent,
+    ThanksComponent,
+    PrintReceiptComponent,
+    CloseCartComponent
   ],
   imports: [
     BrowserModule,
