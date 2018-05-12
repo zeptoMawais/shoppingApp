@@ -11,7 +11,16 @@
     </div>
     <div class="col-md-2">
       <img src="../../assets/img/user.png" alt="" class="rounded user-img-icon">
-      <i class="fa fa-angle-down text-muted"></i>
+      <div ngbDropdown placement="bottom-left" class="d-inline-block">
+      <!-- <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle></button> -->
+      <i class="fa fa-angle-down text-muted" id="dropdownBasic1" ngbDropdownToggle></i>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+        <button class="dropdown-item">Lisa Hawkins</button>
+        <div class="dropdown-divider"></div>
+        <button class="dropdown-item">MY PROFILE</button>
+        <button class="dropdown-item">LOGOUT</button>
+      </div>
+    </div>
     </div>
   </div>
 </div>

@@ -1,0 +1,170 @@
+<div class="container-fluid">
+<div class="row">
+  <div class="col-12 form-inline">
+    <div class="col-3">
+      <img src="../../assets/img/logo.png" class="img-fluid">
+    </div>
+    <div class="col-5">
+        <input type="text" name="search" class="header-search" placeholder="Search..">
+    </div>
+    <div class="col-2">
+        <button class="btn rounded-btn btn-theme-green"><i class="fa fa-shopping-cart"></i> My Cart</button>
+    </div>
+    <div class="col-2">
+      <img src="../../assets/img/user.png" alt="" class="rounded user-img-icon">
+      <div ngbDropdown placement="bottom-left" class="d-inline-block">
+      <!-- <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle></button> -->
+      <i class="fa fa-angle-down text-muted" id="dropdownBasic1" ngbDropdownToggle></i>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+        <button class="dropdown-item">Lisa Hawkins</button>
+        <div class="dropdown-divider"></div>
+        <button class="dropdown-item">MY PROFILE</button>
+        <button class="dropdown-item">LOGOUT</button>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+<div class="row border mt-3 p-10">
+  <div class="col-md-3">
+    <a class="p-l-25"><i class="fa fa-bars"></i> SHOPS MENU</a>
+  </div>
+  <div class="col-md-1">
+    <div>
+      <a>SECOND</a>
+    </div>
+  </div>
+  <div class="col-md-1">
+    <div>
+      <a>THIRD</a>
+    </div>
+  </div>
+  <div class="col-md-1">
+    <div>
+      <a>FOURTH</a>
+    </div>
+  </div>
+  <div class="col-md-1">
+    <div>
+      <a>FIFTH</a>
+    </div>
+  </div>
+  <div class="col-md-1
+  ">
+</div>
+</div>
+<div class="container border mt-3 mb-3">
+  <div class="row mt-5 mb-5">
+    <div class="col-2 p-l-40px">
+      <img src="../../assets/img/user.png" height="150px" width="150px" alt="User">
+    </div>
+    <div class="col-9 profile-info">
+      <h3>Lisa Hawkins</h3>
+      <h6><i class="fa fa-map-marker"></i><span class="pl-2">Shipping Location: </span><span class="text-muted pl-2">93 Emmerich junction Apt. 137</span></h6>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-9">
+      <button type="button" class="btn btn-link text-black" (click)='loadWishlist()'>WISHLIST</button>
+      <button type="button" class="btn btn-link text-black" (click)='loadHistory()'>ORDER HISTORY</button>
+    </div>
+    <div class="col-3">
+      <button type="button" class="btn btn-outline-secondary btn-edit-profile" (click)="openLg(content)">EDIT PROFILE</button>
+    </div>
+  </div>
+</div>
+<div *ngIf="wishlist === 'show'">
+  <app-wishlist></app-wishlist>
+</div>
+<div *ngIf="history === 'show'">
+  <app-order-history></app-order-history>
+</div>
+<app-footer></app-footer>
+<ng-template #content let-c="close" let-d="dismiss">
+  <!-- <div class="modal-header">
+    <h4 class="modal-title"></h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div> -->
+  <div class="modal-body">
+    <div class="row">
+      <div class="col-2 pt-4">
+        <img src="../../assets/img/user.png" height="110px" width="110px" alt="User">
+      </div>
+      <div class="col-10">
+        <form>
+          <h6>PERSONAL INFORMATION</h6>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label class="text-muted">First Name</label>
+            <input type="text" class="form-control modal-input" value="Lisa">
+          </div>
+          <div class="form-group col-md-6">
+            <label class="text-muted">Last Name</label>
+            <input type="text" class="form-control modal-input" value="Hawkins">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label class="text-muted">Date of Birth</label>
+            <input type="text" class="form-control modal-input" value="May 14, 1990">
+          </div>
+          <div class="form-group col-md-6">
+            <label class="text-muted">Gender</label>
+            <select id="inputState" class="form-control modal-input">
+            <option selected>Female</option>
+            <option>Male</option>
+          </select>
+          </div>
+        </div>
+          <h6 class="mt-3 mb-3">CONTACT INFORMATION</h6>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label class="text-muted">Email</label>
+            <input type="email" class="form-control modal-input" id="inputEmail4" value="listhawking@gmail.com">
+          </div>
+          <div class="form-group col-md-6">
+            <label class="text-muted">Phone</label>
+            <input type="text" class="form-control modal-input" value="1234 1234 32">
+          </div>
+        </div>
+          <h6 class="mt-3 mb-3">SHIPPING INFORMATION</h6>
+        <div class="form-group">
+          <label class="text-muted">Street Address</label>
+          <input type="text" class="form-control modal-input" id="inputAddress" value="800 Town suite steet 852">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label class="text-muted">City</label>
+            <input type="text" class="form-control modal-input" id="inputCity" value="San Deiago">
+          </div>
+          <div class="form-group col-md-6">
+            <label class="text-muted">Zip Code</label>
+            <input type="text" class="form-control modal-input" id="inputCity" value="1234">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label class="text-muted">State</label>
+            <input type="text" class="form-control modal-input" id="inputCity" placeholder="Not Entered">
+          </div>
+          <div class="form-group col-md-6">
+            <label class="text-muted">Country</label>
+            <input type="text" class="form-control modal-input" id="inputCity" value="Australia">
+          </div>
+        </div>
+        <div class="row mt-3 mb-3">
+          <div class="col-4">
+            <button class="btn theme-btn text-padding-h15">Save Changes</button>
+          </div>
+        </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <!-- <div class="modal-footer">
+    <button type="button" class="btn btn-light" (click)="c('Close click')">Close</button>
+  </div> -->
+</ng-template>

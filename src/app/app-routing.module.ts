@@ -21,6 +21,10 @@ import { PaymentComponent } from './payment/payment.component';
 import { ThanksComponent } from './thanks/thanks.component';
 import { PrintReceiptComponent } from './print-receipt/print-receipt.component';
 import { CloseCartComponent } from './close-cart/close-cart.component';
+import { ClosePaymentComponent } from './close-payment/close-payment.component';
+import { OrderHistoryComponent } from './order-history/order-history.component';
+import { WishlistComponent } from './wishlist/wishlist.component';
+import { HeaderThirdComponent } from './header-third/header-third.component';
 const routes: Routes = [
   {
     path:'',
@@ -73,6 +77,22 @@ const routes: Routes = [
   {
     path:'closecart',
     component:CloseCartComponent
+  },
+  {
+    path:'closepayment',
+    component:ClosePaymentComponent
+  },
+  {
+    path:'orderhistory',
+    component:OrderHistoryComponent
+  },
+  {
+    path:'wishlist',
+    component:WishlistComponent
+  },
+  {
+    path:'th',
+    component:HeaderThirdComponent
   }
 
 ];

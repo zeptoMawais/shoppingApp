@@ -27,6 +27,11 @@ import { PaymentComponent } from './payment/payment.component';
 import { ThanksComponent } from './thanks/thanks.component';
 import { PrintReceiptComponent } from './print-receipt/print-receipt.component';
 import { CloseCartComponent } from './close-cart/close-cart.component';
+import { ClosePaymentComponent } from './close-payment/close-payment.component';
+import { OrderHistoryComponent } from './order-history/order-history.component';
+import { OrderHistoryChildComponent } from './order-history-child/order-history-child.component';
+import { WishlistComponent } from './wishlist/wishlist.component';
+import { HeaderThirdComponent } from './header-third/header-third.component';
 
 
 @NgModule({
@@ -52,7 +57,12 @@ import { CloseCartComponent } from './close-cart/close-cart.component';
     PaymentComponent,
     ThanksComponent,
     PrintReceiptComponent,
-    CloseCartComponent
+    CloseCartComponent,
+    ClosePaymentComponent,
+    OrderHistoryComponent,
+    OrderHistoryChildComponent,
+    WishlistComponent,
+    HeaderThirdComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,396 @@
+.p-l-40px{
+  padding-left: 40px;
+}
+.profile-info{
+  margin: auto;
+  margin-left: 10px !important;
+}
+.text-black{
+  color: black;
+  font-weight: bold;
+}
+.btn-edit-profile{
+  border-radius: 30px;
+  float: right;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: -20px;
+}
+.text-align-right{
+  text-align: right;
+}
+/* ======================================== Products css ============================= */
+.main-container{
+  height: 100%;
+  margin-top: 37px;
+  border: 1px solid lightgray;
+  margin-bottom: 50px;
+}
+.p-15{
+  padding: 15px;
+}
+.p-l-5{
+  padding-left: 5px;
+}
+.p-l-35{
+  padding-left: 35px;
+}
+.btn-outline-primary{
+  border: none;
+  color: lightgrey;
+}
+.text-lightgrey{
+  color: lightgrey;
+}
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus, .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-outline-primary.dropdown-toggle:focus{
+  box-shadow: none;
+}
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus, .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-outline-primary.dropdown-toggle:focus{
+  color: lightgrey !important;
+  background-color: white !important;
+  border-color: white !important;
+}
+.btn-light{
+  background-color: white;
+  border: none;
+  color: lightgrey;
+}
+.btn-light:hover{
+  background-color: white;
+  border: none;
+  color: lightgrey;
+}
+.btn-light:active{
+  background-color: white;
+  border: none;
+  color: lightgrey;
+}
+.t-c-lightgrey{
+  color: lightgrey !important;
+}
+
+/* ======================================== Products css ============================= */
+
+/* ======================================== close payment ============================= */
+.font-50px{
+  font-size: 38px;
+  color: #e3e3e3;
+}
+.font-12{
+  font-size: 12px;
+}
+.p-t-10{
+  padding-top: 10px;
+}
+.text-color-gray{
+  color: #e3e3e3;
+}
+.p-l-0{
+  padding-left: 0px;
+}
+.text-black{
+  color: black;
+}
+.chivron-icon{
+  color: lightgray;
+    padding: 13px;
+    float: right;
+}
+.theme-text{
+  color: #819a49;
+}
+/* ================================== */
+
+.rounded-btn{
+  border-radius: 30px;
+  padding-left: 30px;
+  padding-right: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.btn-theme-green{
+  background-color: #819a49;
+  color: #fff;
+}
+.inner-circle{
+  border-radius: 56px;
+    background-color: white;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.user-img-icon{
+  max-width: 40px;
+  margin-right: 5px;
+}
+hr{
+  margin-top: 0px !important;
+}
+.rounded-container{
+  border-radius: 30px;
+  padding-left: 0px;
+}
+.theme-btn{
+  background-color: #819a49;
+  color: white;
+  border-radius:30px;
+}
+.light-btn{
+  background-color: white;
+  border: none;
+  border-radius:30px;
+}
+/* .light-btn:hover{
+  background-color: #819a49;
+  color: white;
+  border-radius:30px;
+} */
+.light-btn:active{
+  background-color: #819a49;
+  color: white;
+  border-radius:30px;
+}
+.light-btn:focus{
+  background-color: #819a49;
+  color: white;
+  border: none;
+}
+.text-padding{
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.text-padding-h15{
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.border-radius-30px{
+  border-radius: 30px;
+}
+.total-bill{
+  margin-top: auto;
+    margin-bottom: auto;
+    text-align: right;
+}
+.text-inline{
+  display: inline-flex;
+}
+.p-t-4px{
+  padding-top: 9px;
+}
+.text-bold{
+  font-weight: bold;
+}
+
+
+/* ======================================== close cart css ============================= */
+
+/* =========================== payment css =========================== */
+.theme-btn{
+  background-color: #819a49;
+  color: white;
+  border-radius:30px;
+}
+.rounded-container{
+  border-radius: 30px;
+  padding-left: 0px;
+}
+.border-radius-30px{
+  border-radius: 30px;
+}
+.text-padding{
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.text-padding-h15{
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.text-padding-h10{
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.light-btn{
+  background-color: white;
+  border: none;
+  border-radius:30px;
+}
+/* .light-btn:hover{
+  background-color: #819a49;
+  color: white;
+  border-radius:30px;
+} */
+.light-btn:active{
+  background-color: #819a49;
+  color: white;
+  border-radius:30px;
+}
+.light-btn:focus{
+  background-color: #819a49;
+  color: white;
+  border: none;
+}
+.background-color-graytype{
+  background-color: #f7f7f7;
+}
+.font-50px{
+  font-size: 50px;
+  color: #e3e3e3;
+}
+.p-t-10{
+  padding-top: 10px;
+}
+.text-color-gray{
+  color: #e3e3e3;
+}
+.p-l-0{
+  padding-left: 0px;
+}
+hr{
+  margin-top: 0px !important;
+}
+.display-inline{
+  display: inline-flex;
+}
+.vertically-center{
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 10px;
+}
+.quantity-number{
+  padding-top: 12px;
+  padding-right: 10px;
+}
+.border-left-none{
+  border-left: none !important;
+}
+.border-right-none{
+  border-right: none !important;
+}
+.description-text{
+  font-size: 13px;
+  margin-top: 10%;
+}
+.brand-name-text{
+  font-size: 13px;
+}
+.p-t-20pc{
+  padding-top: 20%;
+}
+.p-t-15pc{
+  padding-top: 15%;
+}
+.p-t-50pc{
+  padding-top: 50%;
+}
+.receipt-header{
+  font-size: 12px;
+  padding-top: 15px;
+}
+.float-right{
+  float: right;
+}
+.font-bold{
+  font-weight: bold;
+}
+.text-align-center{
+  text-align: center;
+}
+.text-align-right{
+  text-align: right;
+}
+.m-r-40{
+  margin-right: 40px;
+}
+.payment-icon{
+  background-color: white;
+  border: none;
+}
+.p-50{
+  padding: 50px;
+}
+.border-right{
+  border-right: 1px solid lightgrey;
+}
+.p-10{
+  padding: 10px;
+  width: 100%
+}
+.font-14px{
+  font-size: 14px;
+}
+.full-width{
+  width: 100%;
+}
+.payment-confirmation-icon{
+  font-size: 100px;
+  color: #96c52c;
+  padding-left: 30%;
+}
+.p-l-20pc{
+  padding-left: 20%;
+}
+
+/* =========================== payment css =========================== */
+.main-container{
+  height: 100%;
+  margin-top: 37px;
+  border: 1px solid lightgray;
+  margin-bottom: 50px;
+}
+.p-15{
+  padding: 15px;
+}
+.p-l-5{
+  padding-left: 5px;
+}
+.p-l-35{
+  padding-left: 35px;
+}
+.btn-outline-primary{
+  border: none;
+  color: lightgrey;
+}
+.text-lightgrey{
+  color: lightgrey;
+}
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus, .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-outline-primary.dropdown-toggle:focus{
+  box-shadow: none;
+}
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus, .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-outline-primary.dropdown-toggle:focus{
+  color: lightgrey !important;
+  background-color: white !important;
+  border-color: white !important;
+}
+.btn-light{
+  background-color: white;
+  border: none;
+  color: lightgrey;
+}
+.btn-light:hover{
+  background-color: white;
+  border: none;
+  color: lightgrey;
+}
+.btn-light:active{
+  background-color: white;
+  border: none;
+  color: lightgrey;
+}
+.t-c-lightgrey{
+  color: lightgrey !important;
+}
