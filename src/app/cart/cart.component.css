@@ -102,3 +102,26 @@ hr{
 .font-bold{
   font-weight: bold;
 }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .p-t-20pc{
+    padding-top: 32%;
+  }
+  .p-t-50pc{
+    padding-top: 91%;
+  }
+  .text-padding-h15{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .text-padding-h15{
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}

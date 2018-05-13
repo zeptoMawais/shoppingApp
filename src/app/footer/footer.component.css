@@ -2,4 +2,21 @@ ul
 {
   list-style-type: none;
 }
-
+.text-white{
+  color: white;
+}
+.footer-theme{
+  height: 150px;
+  background-color: #404040;
+}
+.p-l-30px{
+  padding-left: 30px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .p-l-30px{
+    padding-left: 12px;
+  }
+  .text-font-size{
+    font-size: 14px;
+  }
+}

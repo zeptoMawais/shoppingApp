@@ -1,21 +1,21 @@
 <div class="container border m-t">
-  <div class="col-12">
+  <div class="col-12 mt-3">
     <div class="d-inline-flex">
       <div ngbDropdown class="col-12">
         <a class="dropdown-toggle" id="newest" ngbDropdownToggle>NEWEST</a>
         <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="newest">
-          <a class="dropdown-item" href="#">Link 1</a>
-          <a class="dropdown-item" href="#">Link 2</a>
-          <a class="dropdown-item" href="#">Link 3</a>
+          <a class="dropdown-item" href="javascript:void(0)">Link 1</a>
+          <a class="dropdown-item" href="javascript:void(0)">Link 2</a>
+          <a class="dropdown-item" href="javascript:void(0)">Link 3</a>
 
         </div>
       </div>
       <div ngbDropdown class="col-12">
         <a class="dropdown-toggle" id="sortby" ngbDropdownToggle>SORT BY</a>
         <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="sortby">
-          <a class="dropdown-item" href="#">Link 1</a>
-          <a class="dropdown-item" href="#">Link 2</a>
-          <a class="dropdown-item" href="#">Link 3</a>
+          <a class="dropdown-item" href="javascript:void(0)">Link 1</a>
+          <a class="dropdown-item" href="javascript:void(0)">Link 2</a>
+          <a class="dropdown-item" href="javascript:void(0)">Link 3</a>
         </div>
       </div>
     </div>
@@ -23,16 +23,16 @@
       <nav aria-label="Page navigation example">
         <ul class="pagination">
           <li class="page-item">
-            <a class="page-link" href="#" aria-label="Previous">
+            <a class="page-link" href="javascript:void(0)" aria-label="Previous">
               <span aria-hidden="true">&laquo;</span>
               <span class="sr-only">Previous</span>
             </a>
           </li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0)">1</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0)">2</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
           <li class="page-item">
-            <a class="page-link" href="#" aria-label="Next">
+            <a class="page-link" href="javascript:void(0)" aria-label="Next">
               <span aria-hidden="true">&raquo;</span>
               <span class="sr-only">Next</span>
             </a>
@@ -76,7 +76,7 @@
         </div>
       </li>
       <li class="media mt-4">
-        <a href="#" class="pull-left">
+        <a href="javascript:void(0)" class="pull-left">
           <img src="../../assets/img/user.png" alt="" class="rounded img-comment">
         </a>
         <div class="media-body border-bottom p-l-15">
@@ -92,7 +92,7 @@
         </div>
       </li>
       <li class="media mt-4 ">
-        <a href="#" class="pull-left">
+        <a href="javascript:void(0)" class="pull-left">
           <img src="../../assets/img/user.png" alt="" class="rounded img-comment">
         </a>
         <div class="media-body border-bottom p-l-15">
@@ -108,7 +108,7 @@
         </div>
       </li>
       <li class="media mt-4">
-        <a href="#" class="pull-left">
+        <a href="javascript:void(0)" class="pull-left">
           <img src="../../assets/img/user.png" alt="" class="rounded img-comment">
         </a>
         <div class="media-body border-bottom p-l-15">
@@ -124,7 +124,7 @@
         </div>
       </li>
       <li class="media mt-4">
-        <a href="#" class="pull-left">
+        <a href="javascript:void(0)" class="pull-left">
           <img src="../../assets/img/user.png" alt="" class="rounded img-comment">
         </a>
         <div class="media-body p-l-15">
@@ -141,9 +141,30 @@
       </li>
     </ul>
   </div>
-  <div class="col-12 container mt-5">
-    <textarea class="col-12 form-control" placeholder="Write a comment" rows="3" cols="3"></textarea>
-    <div class=" mt-4 col-12 d-inline-flex">
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col">
+        <textarea class="col-12 form-control" placeholder="Write a comment" rows="3" cols="3"></textarea>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-xl-10 col-lg-9 col-md-8 text-align-right">
+        <div class="row">
+          <div class="col">
+            <app-rating></app-rating>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p class="text-muted">Set your mark</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-2 col-lg-3 col-md-4">
+        <button class="btn btn-rounded btn-green add-comment-btn">ADD COMMENT</button>
+      </div>
+    </div>
+    <!-- <div class=" mt-4 col-12 d-inline-flex">
       <div class="offset-7 col-2">
         <app-rating></app-rating>
         <p class="text-muted">Set your mark</p>
@@ -151,6 +172,6 @@
       <div class="col-3">
         <button class="btn btn-rounded btn-green add-comment-btn">ADD COMMENT</button>
       </div>
-    </div>
+    </div> -->
   </div>
 </div>

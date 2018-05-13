@@ -64,3 +64,27 @@ hr{
 .dropdown-toggle:empty::after{
   display: none !important;
 }
+@media (min-width: 576px) and (max-width: 767px) {
+  .text-padding{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+ }
+ @media (min-width: 768px) and (max-width: 991px) {
+   .text-padding{
+     padding-left: 50px;
+     padding-right: 50px;
+     padding-top: 7px;
+     padding-bottom: 7px;
+   }
+ }
+ @media (min-width: 992px) and (max-width: 1199px) {
+   .text-padding{
+     padding-left: 75px;
+     padding-right: 75px;
+     padding-top: 7px;
+     padding-bottom: 7px;
+   }
+ }

@@ -416,5 +416,24 @@ hr{
 .p-l-20pc{
   padding-left: 20%;
 }
+.user-profile-in-modal{
+  height: 110px !important;
+  width: 110px !important;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .user-profile-in-modal{
+    height: 70px !important;
+    width: 70px !important;
+  }
+  .text-padding-h15{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+}
 
 /* =========================== payment css =========================== */

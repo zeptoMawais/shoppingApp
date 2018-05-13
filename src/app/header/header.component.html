@@ -1,9 +1,9 @@
-<div class="row">
+<div class="row mt-3 mb-3">
   <div class="col-md-12 form-inline">
-    <div class="col-md-3">
+    <div class="col-lg-2 col-md-3">
       <img src="../../assets/img/logo.png" class="img-fluid">
     </div>
-    <div class="col-md-6">
+    <div class="col-lg-1col-md-1 pl-0 pr-0">
         <div ngbDropdown class="d-inline-block">
           <button class="btn dropdown-btn" id="dropdownBasic1" ngbDropdownToggle></button>
           <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
@@ -12,7 +12,6 @@
             <button class="dropdown-item" (mouseenter)="isProductCollapsed = !isProductCollapsed" (mouseleave)="isProductCollapsed = !isProductCollapsed" [attr.aria-expanded]="!isProductCollapsed" aria-controls="products">Products</button>
           </div>
         </div>
-        <input type="text" name="search" class="header-search" placeholder="Search..">
       <div id="shops" class="right-menu" [ngbCollapse]="isShopCollapsed" (mouseenter)="isShopCollapsed = !isShopCollapsed" (mouseleave)="isShopCollapsed = !isShopCollapsed">
         <div class="card">
           <div class="card-body ">
@@ -207,14 +206,17 @@
         </div>
       </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-lg-5 col-md-3">
+      <input type="text" name="search" class="header-search" placeholder="Search..">
+    </div>
+    <div class="col-lg-4 col-md-5">
       <div data-toggle="buttons">
         <button class="btn btn-rounded btn-green focus"><i class="fa fa-shopping-cart"></i> My Cart</button>
         <button class="btn btn-rounded btn-login" (click)="open(content)">Login</button>
       </div>
     </div>
   </div>
-  <div class="col-md-12 border-top">
+  <div class="col-md-12 mt-3 border-top">
     <div ngbDropdown>
       <div class="menu-padding form-inline" id="Menu" ngbDropdownToggle>
         <div ngbDropdownMenu aria-labelledby="Menu" class="col-md-12">
@@ -243,7 +245,7 @@
             <button class="dropdown-item">Category Sixteen</button>
           </div>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-3">
           <a class="p-l-25"><i class="fa fa-bars"></i> SHOPS MENU</a>
         </div>
         <div class="col-md-2">
@@ -265,9 +267,6 @@
           <div>
             <a>FIFTH</a>
           </div>
-        </div>
-        <div class="col-md-2">
-
         </div>
       </div>
     </div>

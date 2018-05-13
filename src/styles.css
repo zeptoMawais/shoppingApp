@@ -32,7 +32,7 @@
   margin-right: -30px;
   position: relative;
 }
-.btn.btn-green.focus{
+.btn.btn-green{
   background-color: #819a49;
   color: #fff;
   position: relative;
@@ -40,9 +40,9 @@
 .btn.btn-login{
   padding-left: 50px;
 }
-.btn.btn-login.focus{
-  background-color: #819a49;
-  color: #fff;
+.btn.btn-login{
+  background-color: lightgray;
+  color: black;
   position: relative;
 }
 .menu-padding{

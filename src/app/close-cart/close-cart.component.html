@@ -1,19 +1,26 @@
-<div class="row">
-  <div class="col-md-12 form-inline">
-    <div class="col-md-3">
+<div class="row form-inline">
+    <div class="col-lg-3 col-md-3">
       <img src="../../assets/img/logo.png" class="img-fluid">
     </div>
-    <div class="col-md-5">
+    <div class="col-lg-5 col-md-4">
         <input type="text" name="search" class="header-search" placeholder="Search..">
     </div>
-    <div class="col-md-2">
+    <div class="col-lg-2 col-md-3">
         <button class="btn rounded-btn btn-theme-green"><i class="fa fa-shopping-cart"></i> My Cart<span class="inner-circle">5</span></button>
     </div>
-    <div class="col-md-2">
+    <div class="col-lg-2 col-md-2">
       <img src="../../assets/img/user.png" alt="" class="rounded user-img-icon">
-      <i class="fa fa-angle-down text-muted"></i>
+      <div ngbDropdown placement="bottom-left" class="d-inline-block">
+      <!-- <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle></button> -->
+      <i class="fa fa-angle-down text-muted" id="dropdownBasic1" ngbDropdownToggle></i>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+        <button class="dropdown-item">Lisa Hawkins</button>
+        <div class="dropdown-divider"></div>
+        <button class="dropdown-item">MY PROFILE</button>
+        <button class="dropdown-item">LOGOUT</button>
+      </div>
     </div>
-  </div>
+    </div>
 </div>
 <hr>
 <div class="row mt-4">
@@ -127,18 +134,18 @@
     </div>
   </div>
   <div class="row mt-3 mb-4">
-    <div class="col-2 offset-8 total-bill">
+    <div class="col-lg-2 offset-lg-7 col-md-3 offset-md-6 total-bill">
       <h6 >Total Bill</h6>
     </div>
-    <div class="col-2">
+    <div class="col-lg-3 col-md-3">
       <h3>KES 500.00</h3>
     </div>
   </div>
   <div class="row mt-3 mb-4">
-    <div class="col-4 ">
+    <div class="col-lg-4 col-md-6">
       <button type="button" class="btn btn-outline-secondary border-radius-30px text-padding-h15">CONTINUE SHOPPING</button>
     </div>
-    <div class="col-4 offset-4">
+    <div class="col-lg-4 offset-lg-3 col-md-6">
       <button class="btn btn-theme-green border-radius-30px text-padding-h15">PROCEED TO CHECKOUT</button>
     </div>
   </div>
