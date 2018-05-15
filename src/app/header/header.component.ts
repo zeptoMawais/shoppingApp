@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
+import {Router} from "@angular/router";
 
 
 @Component({
@@ -12,7 +13,7 @@ export class HeaderComponent implements OnInit {
   public isShopCollapsed = true;
   public isLocationCollapsed = true;
   public isProductCollapsed = true;
-  constructor(private modalService: NgbModal) { }
+  constructor(private modalService: NgbModal, private router: Router) { }
 
   ngOnInit() {
   }
@@ -32,6 +33,15 @@ export class HeaderComponent implements OnInit {
     } else {
       return  `with: ${reason}`;
     }
+  }
+  productsFromCatagory(){
+    this.router.navigate(['productsFromCatagoryUi']);
+  }
+  shopSearchResult(){
+    this.router.navigate(['shopSearchResult']);
+  }
+  cart(){
+    this.router.navigate(['cartView']);
   }
 
 }

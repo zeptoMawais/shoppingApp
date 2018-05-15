@@ -35,19 +35,19 @@ const routes: Routes = [
     component:MyCarouselComponent
   },
   {
-    path:'productsearchresult',
+    path:'productsFromCatagoryUi',
     component:ProductSearchResultComponent
   },
   {
-    path:'shopsearchresult',
+    path:'shopSearchResult',
     component:ShopSearchResultComponent
   },
   {
-    path:'shopdescription',
+    path:'shopProfile',
     component:ShopDiscriptionComponent
   },
   {
-    path:'productdescription',
+    path:'productView',
     component:ProductDesciptionComponent
   },
   {
@@ -55,7 +55,7 @@ const routes: Routes = [
     component:CartComponent
   },
   {
-    path:'sh',
+    path:'cartView',
     component:HeaderSecondComponent
   },
   {
@@ -91,7 +91,7 @@ const routes: Routes = [
     component:WishlistComponent
   },
   {
-    path:'th',
+    path:'buyerProfile',
     component:HeaderThirdComponent
   }
 

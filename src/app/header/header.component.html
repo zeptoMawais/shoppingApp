@@ -3,7 +3,7 @@
     <div class="col-lg-2 col-md-3">
       <img src="../../assets/img/logo.png" class="img-fluid">
     </div>
-    <div class="col-lg-1col-md-1 pl-0 pr-0">
+    <div class="col-lg-1 col-md-1 pl-0 pr-0">
         <div ngbDropdown class="d-inline-block">
           <button class="btn dropdown-btn" id="dropdownBasic1" ngbDropdownToggle></button>
           <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
@@ -51,7 +51,7 @@
                   </div>
                 </div>
               </a>
-              <a href="javascript:void(0)" class="list-group-item list-group-item-action list-loadmore">
+              <a href="javascript:void(0)" (click)="shopSearchResult()" class="list-group-item list-group-item-action list-loadmore">
                 Show All Results
                 <i class="fa fa-angle-right"></i>
               </a>
@@ -193,7 +193,7 @@
                     </div>
                   </a>
 
-                  <a href="javascript:void(0)" class="list-group-item list-group-item-action list-loadmore">
+                  <a href="javascript:void(0)" (click)="productsFromCatagory()" class="list-group-item list-group-item-action list-loadmore">
                     Show All Results
                     <i class="fa fa-angle-right"></i>
                   </a>
@@ -211,7 +211,7 @@
     </div>
     <div class="col-lg-4 col-md-5">
       <div data-toggle="buttons">
-        <button class="btn btn-rounded btn-green focus"><i class="fa fa-shopping-cart"></i> My Cart</button>
+        <button class="btn btn-rounded btn-green focus" (click)="cart()"><i class="fa fa-shopping-cart"></i> My Cart</button>
         <button class="btn btn-rounded btn-login" (click)="open(content)">Login</button>
       </div>
     </div>
