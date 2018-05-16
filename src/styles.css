@@ -21,6 +21,9 @@
   transition: width 0.4s ease-in-out;
   border-radius: 30px;
 }
+.cursor-pointer{
+  cursor: pointer;
+}
 .btn.btn-rounded{
   border-radius: 30px;
   padding-left: 30px;

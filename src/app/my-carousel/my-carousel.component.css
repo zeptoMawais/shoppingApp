@@ -70,6 +70,7 @@
 }
 .borderedBox{
   border: 1px solid #e3e3e3;
+  cursor: pointer;
 }
 .productCount{
   font-size: 9px;

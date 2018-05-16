@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {Router} from "@angular/router";
 @Component({
   selector: 'app-header-second',
   templateUrl: './header-second.component.html',
@@ -11,7 +11,7 @@ export class HeaderSecondComponent implements OnInit {
   delivery: string = 'hide';
   payment: string = 'hide';
   receipt: string = 'hide';
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
@@ -38,6 +38,9 @@ export class HeaderSecondComponent implements OnInit {
     this.delivery = 'hide';
     this.payment = 'hide';
     this.receipt = 'show';
+  }
+  buyerProfile(){
+    this.router.navigate(['buyerProfile']);
   }
 
 }

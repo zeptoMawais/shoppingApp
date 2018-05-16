@@ -28,7 +28,7 @@ import { HeaderThirdComponent } from './header-third/header-third.component';
 const routes: Routes = [
   {
     path:'',
-    component:SampleComponent
+    component:MyCarouselComponent
   },
   {
     path:'main',
@@ -93,6 +93,10 @@ const routes: Routes = [
   {
     path:'buyerProfile',
     component:HeaderThirdComponent
+  },
+  {
+    path:'links',
+    component:SampleComponent
   }
 
 ];
