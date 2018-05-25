@@ -1,7 +1,13 @@
+.font-sans-serif{
+  font-family: sans-serif;
+}
 .btn-facebook {
   color: white !important;
   background-color: #3b5998;
   border-color: rgba(0,0,0,0.2);
+}
+.logo-height{
+  height: 70px !important;
 }
 .btn-social {
   position: relative;
@@ -145,6 +151,12 @@ ul
 }
 .color-black{
   color: black !important;
+}
+.dropdown-toggle::after{
+  display: none;
+}
+.p-l-9pc{
+  padding-left: 9%;
 }
 .p-l-15{
   padding-left: 15px;

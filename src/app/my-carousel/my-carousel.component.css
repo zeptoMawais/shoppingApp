@@ -1,3 +1,6 @@
+.font-sans-serif{
+  font-family: sans-serif;
+}
 .ibox{
   clear: both;
   margin-bottom: 25px;
@@ -7,6 +10,11 @@
 .product-box {
     padding: 0;
     border: 1px solid #e7eaec;
+}
+.featured-shop-logo{
+  border: 1px solid #f8f8f8;
+  border-radius: 50px;
+  margin-top: 15px;
 }
 .ibox-content {
     clear: both;
@@ -43,17 +51,18 @@
     color: #888888;
 }
 .product-name {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 600;
     color: #676a6c;
     display: block;
     margin: 2px 0 5px 0;
+    font-family: sans-serif;
 }
 .m-t-xs {
     margin-top: 5px;
 }
 .small, small {
-    font-size: 85%;
+    font-size: 70%;
     color: dimgray;
 }
 .m-t {
@@ -73,9 +82,10 @@
   cursor: pointer;
 }
 .productCount{
-  font-size: 9px;
-  padding-top: 50px;
-  color: gray;
+  font-size: 10px;
+  padding-top: 35px;
+  color: #c0c0c0;
+  padding-left: 25px;
 }
 .productLogo{
   padding-top: 14px;
@@ -91,7 +101,7 @@
 }
 
 .sliderIcon{
-  margin-top: 220px;
+  margin-top: 150px;
   font-size: 50px;
   padding-left: 30px;
   color: #e3e3e3;
@@ -143,4 +153,10 @@ hr{
 }
 .p-t-fifty{
   padding-top:50px ;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+
 }

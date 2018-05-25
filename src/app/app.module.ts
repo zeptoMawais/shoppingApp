@@ -32,6 +32,7 @@ import { OrderHistoryComponent } from './order-history/order-history.component';
 import { OrderHistoryChildComponent } from './order-history-child/order-history-child.component';
 import { WishlistComponent } from './wishlist/wishlist.component';
 import { HeaderThirdComponent } from './header-third/header-third.component';
+import { SingleFeaturedShopComponent } from './single-featured-shop/single-featured-shop.component';
 
 
 @NgModule({
@@ -62,7 +63,8 @@ import { HeaderThirdComponent } from './header-third/header-third.component';
     OrderHistoryComponent,
     OrderHistoryChildComponent,
     WishlistComponent,
-    HeaderThirdComponent
+    HeaderThirdComponent,
+    SingleFeaturedShopComponent
   ],
   imports: [
     BrowserModule,
