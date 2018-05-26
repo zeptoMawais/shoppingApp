@@ -4,7 +4,7 @@ import {Router} from "@angular/router";
 import {Observable, Subject} from 'rxjs';
 import {debounceTime, distinctUntilChanged, filter, map, merge} from 'rxjs/operators';
 
-const states = ['awais','ali','umar'];
+const states = ['Shops','Shops Locations','Products'];
 
 @Component({
   selector: 'app-header',
