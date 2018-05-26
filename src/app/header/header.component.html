@@ -1,6 +1,6 @@
 <div class="row mt-3 mb-3">
-  <div class="col-md-12 form-inline">
-    <div class="col-lg-3 col-xl-3 col-md-3 col-sm-3  t-a-r">
+  <div class="col-12 form-inline">
+    <div class="col-lg-3 col-xl-3 col-md-3 col-sm-3 col-3 p-r-0-xs t-a-r">
       <img src="../../assets/img/logo.png" class="img-fluid logo-height">
     </div>
     <!--<div class="col-lg-1 col-md-1 pl-0 pr-0">-->
@@ -206,17 +206,17 @@
         <!--</div>-->
       <!--</div>-->
     <!--</div>-->
-    <div class="col-xl-5 col-lg-5 col-md-3">
+    <div class="col-xl-5 col-lg-5 col-md-5 col-4">
       <input type="text" [ngbTypeahead]="search" (focus)="focus$.next($event.target.value)" (click)="click$.next($event.target.value)" #instance="ngbTypeahead"  class="header-search" placeholder="Search shops, products, location..">
     </div>
-    <div class="col-lg-4 col-md-5">
+    <div class="col-lg-4 col-md-4 p-l-0-xs col-6">
       <div data-toggle="buttons">
         <button class="btn btn-rounded btn-green z-index-higher" (click)="cart()"><i class="fa fa-shopping-cart cart-button-icon"></i><span class="cart-button-text"> My cart</span></button>
         <button class="btn btn-rounded btn-login z-index-lower" (click)="open(content)"><span class=" login-button-text">Login</span></button>
       </div>
     </div>
   </div>
-  <div class="col-md-12 mt-3 border-top">
+  <div class="col-12 mt-3 border-top">
     <div ngbDropdown>
       <div class="menu-padding form-inline" id="Menu" ngbDropdownToggle>
         <div ngbDropdownMenu aria-labelledby="Menu" class="col-md-12">
@@ -245,30 +245,30 @@
             <button class="dropdown-item">Category Sixteen</button>
           </div>
         </div>
-        <div class="col-md-3 t-a-r">
-          <a class="p-l-25 p-r-100px"><i class="fa fa-bars text-muted"></i><span class="font-size-13 pl-2"> SHOPS MENU</span></a>
+        <div class="col-md-3 col-4 t-a-r">
+          <a class="p-l-25 p-r-100px"><i class="fa fa-bars bars-icon"></i><span class="font-size-13 pl-2"> SHOPS MENU</span></a>
         </div>
-        <div class="col-md-1">
+        <div class="col-md-1 col-2">
           <div>
             <a class="font-size-13">SECOND</a>
           </div>
         </div>
-        <div class="col-md-1">
+        <div class="col-md-1 col-2">
           <div>
             <a class="font-size-13">THIRD</a>
           </div>
         </div>
-        <div class="col-md-1">
+        <div class="col-md-1 col-2">
           <div>
             <a class="font-size-13">FOURTH</a>
           </div>
         </div>
-        <div class="col-md-1">
+        <div class="col-md-1 col-2">
           <div>
             <a class="font-size-13">FIFTH</a>
           </div>
         </div>
-        <div class="col-md-1">
+        <div class="col-md-1 col-2 hide">
           <div>
             <a class="font-size-13">SIXTH</a>
           </div>
