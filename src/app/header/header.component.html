@@ -3,212 +3,219 @@
     <div class="col-lg-3 col-xl-3 col-md-3 col-sm-3 col-3 p-r-0-xs t-a-r">
       <img src="../../assets/img/logo.png" class="img-fluid logo-height">
     </div>
-    <!--<div class="col-lg-1 col-md-1 pl-0 pr-0">-->
-        <!--<div ngbDropdown class="d-inline-block">-->
-          <!--<button class="btn dropdown-btn" id="dropdownBasic1" ngbDropdownToggle></button>-->
-          <!--<div ngbDropdownMenu aria-labelledby="dropdownBasic1">-->
-            <!--<button class="dropdown-item" (mouseenter)="isShopCollapsed = !isShopCollapsed" (mouseleave)="isShopCollapsed = !isShopCollapsed" [attr.aria-expanded]="!isShopCollapsed" aria-controls="shops">Shops</button>-->
-            <!--<button class="dropdown-item" (mouseenter)="isLocationCollapsed = !isLocationCollapsed" (mouseleave)="isLocationCollapsed = !isLocationCollapsed" [attr.aria-expanded]="!isLocationCollapsed" aria-controls="shops-location">Shops Location</button>-->
-            <!--<button class="dropdown-item" (mouseenter)="isProductCollapsed = !isProductCollapsed" (mouseleave)="isProductCollapsed = !isProductCollapsed" [attr.aria-expanded]="!isProductCollapsed" aria-controls="products">Products</button>-->
-          <!--</div>-->
-        <!--</div>-->
-      <!--<div id="shops" class="right-menu" [ngbCollapse]="isShopCollapsed" (mouseenter)="isShopCollapsed = !isShopCollapsed" (mouseleave)="isShopCollapsed = !isShopCollapsed">-->
-        <!--<div class="card">-->
-          <!--<div class="card-body ">-->
-            <!--&lt;!&ndash;<h6 class="shop-menu-heading">SHOP NAME</h6>&ndash;&gt;-->
-            <!--<div class="list-group">-->
-              <!--<h6 class="shop-menu-heading">SHOP NAME</h6>-->
-              <!--<a href="javascript:void(0)" class="list-group-item list-group-item-action">-->
-                <!--<div class="row">-->
-                  <!--<div class="col-md-2">-->
-                    <!--<i class="fa fa-building shop-menu-icon"></i>-->
-                  <!--</div>-->
-                  <!--<div class="col-md-8">-->
-                    <!--<p class="shop-menu-product-name">Whiner and Diner</p>-->
-                    <!--<p class="shop-menu-product-address">Stamfor, CT</p>-->
-                  <!--</div>-->
-                <!--</div>-->
-              <!--</a>-->
-              <!--<a href="javascript:void(0)" class="list-group-item list-group-item-action">-->
-                <!--<div class="row">-->
-                  <!--<div class="col-md-2">-->
-                    <!--<i class="fa fa-building shop-menu-icon"></i>-->
-                  <!--</div>-->
-                  <!--<div class="col-md-8">-->
-                    <!--<p class="shop-menu-product-name">East Albert</p>-->
-                    <!--<p class="shop-menu-product-address">Lake Receetown</p>-->
-                  <!--</div>-->
-                <!--</div>-->
-              <!--</a>-->
-              <!--<a href="javascript:void(0)" class="list-group-item list-group-item-action">-->
-                <!--<div class="row">-->
-                  <!--<div class="col-md-2">-->
-                    <!--<i class="fa fa-building shop-menu-icon"></i>-->
-                  <!--</div>-->
-                  <!--<div class="col-md-8">-->
-                    <!--<p class="shop-menu-product-name">Whiner and Diner</p>-->
-                    <!--<p class="shop-menu-product-address">Stamfor, CT</p>-->
-                  <!--</div>-->
-                <!--</div>-->
-              <!--</a>-->
-              <!--<a href="javascript:void(0)" (click)="shopSearchResult()" class="list-group-item list-group-item-action list-loadmore">-->
-                <!--Show All Results-->
-                <!--<i class="fa fa-angle-right"></i>-->
-              <!--</a>-->
-            <!--</div>-->
-          <!--</div>-->
-        <!--</div>-->
-      <!--</div>-->
-      <!--<div id="shops-location" class="right-menu" [ngbCollapse]="isLocationCollapsed" (mouseenter)="isLocationCollapsed = !isLocationCollapsed" (mouseleave)="isLocationCollapsed = !isLocationCollapsed">-->
-        <!--<div class="card">-->
-          <!--<div class="card-body">-->
-            <!--<h6 class="shop-menu-heading">WITHIN A RADIUS</h6>-->
-            <!--<div class="slidecontainer">-->
-              <!--<input type="range" min="1" max="100" value="50" class="slider" id="myRange">-->
-            <!--</div>-->
-            <!--<div class="row m-t">-->
-              <!--<div class="col-md-3">-->
-                <!--<h6 class="shop-menu-heading">0KM</h6>-->
-              <!--</div>-->
-              <!--<div class="col-md-3"><h6 class="shop-menu-heading">1KM</h6></div>-->
-              <!--<div class="col-md-3"><h6 class="shop-menu-heading">5KM</h6></div>-->
-              <!--<div class="col-md-3 t-a-r"><h6 class="shop-menu-heading">50KM</h6></div>-->
+    <!-- <div class="col-lg-1 col-md-1 pl-0 pr-0">
+        <div ngbDropdown class="d-inline-block">
+          <button class="btn dropdown-btn" id="dropdownBasic1" ngbDropdownToggle></button>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <button class="dropdown-item" (mouseenter)="isShopCollapsed = !isShopCollapsed" (mouseleave)="isShopCollapsed = !isShopCollapsed" [attr.aria-expanded]="!isShopCollapsed" aria-controls="shops">Shops</button>
+            <button class="dropdown-item" (mouseenter)="isLocationCollapsed = !isLocationCollapsed" (mouseleave)="isLocationCollapsed = !isLocationCollapsed" [attr.aria-expanded]="!isLocationCollapsed" aria-controls="shops-location">Shops Location</button>
+            <button class="dropdown-item" (mouseenter)="isProductCollapsed = !isProductCollapsed" (mouseleave)="isProductCollapsed = !isProductCollapsed" [attr.aria-expanded]="!isProductCollapsed" aria-controls="products">Products</button>
+          </div>
+        </div> -->
+
+        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-4">
+          <!-- <input type="text" [ngbTypeahead]="search" (focus)="focus$.next($event.target.value)" (click)="click$.next($event.target.value)" #instance="ngbTypeahead"  class="header-search" placeholder="Search shops, products, location.."> -->
+          <div class="dropdown">
+            <input type="text" class="header-search" placeholder="Search shops, products, location..">
+            <div class="dropdown-content">
+              <button class="dropdown-item" (mouseenter)="isShopCollapsed = !isShopCollapsed" (mouseleave)="isShopCollapsed = !isShopCollapsed" [attr.aria-expanded]="!isShopCollapsed" aria-controls="shops">Shops</button>
+              <button class="dropdown-item" (mouseenter)="isLocationCollapsed = !isLocationCollapsed" (mouseleave)="isLocationCollapsed = !isLocationCollapsed" [attr.aria-expanded]="!isLocationCollapsed" aria-controls="shops-location">Shops Location</button>
+              <button class="dropdown-item" (mouseenter)="isProductCollapsed = !isProductCollapsed" (mouseleave)="isProductCollapsed = !isProductCollapsed" [attr.aria-expanded]="!isProductCollapsed" aria-controls="products">Products</button>
+            </div>
+          </div>
+          <div id="shops" class="right-menu" [ngbCollapse]="isShopCollapsed" (mouseenter)="isShopCollapsed = !isShopCollapsed" (mouseleave)="isShopCollapsed = !isShopCollapsed">
+            <div class="card">
+              <div class="card-body ">
+                <div class="list-group">
+                  <h6 class="shop-menu-heading">SHOP NAME</h6>
+                  <a href="javascript:void(0)" class="list-group-item list-group-item-action">
+                    <div class="row">
+                      <div class="col-md-2">
+                        <i class="fa fa-building shop-menu-icon"></i>
+                      </div>
+                      <div class="col-md-8">
+                        <p class="shop-menu-product-name">Whiner and Diner</p>
+                        <p class="shop-menu-product-address">Stamfor, CT</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="javascript:void(0)" class="list-group-item list-group-item-action">
+                    <div class="row">
+                      <div class="col-md-2">
+                        <i class="fa fa-building shop-menu-icon"></i>
+                      </div>
+                      <div class="col-md-8">
+                        <p class="shop-menu-product-name">East Albert</p>
+                        <p class="shop-menu-product-address">Lake Receetown</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="javascript:void(0)" class="list-group-item list-group-item-action">
+                    <div class="row">
+                      <div class="col-md-2">
+                        <i class="fa fa-building shop-menu-icon"></i>
+                      </div>
+                      <div class="col-md-8">
+                        <p class="shop-menu-product-name">Whiner and Diner</p>
+                        <p class="shop-menu-product-address">Stamfor, CT</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="javascript:void(0)" (click)="shopSearchResult()" class="list-group-item list-group-item-action list-loadmore">
+                    Show All Results
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="shops-location" class="right-menu" [ngbCollapse]="isLocationCollapsed" (mouseenter)="isLocationCollapsed = !isLocationCollapsed" (mouseleave)="isLocationCollapsed = !isLocationCollapsed">
+            <div class="card">
+              <div class="card-body">
+                <h6 class="shop-menu-heading">WITHIN A RADIUS</h6>
+                <div class="slidecontainer">
+                  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </div>
+                <div class="row m-t">
+                  <div class="col-md-3">
+                    <h6 class="shop-menu-heading">0KM</h6>
+                  </div>
+                  <div class="col-md-3"><h6 class="shop-menu-heading">1KM</h6></div>
+                  <div class="col-md-3"><h6 class="shop-menu-heading">5KM</h6></div>
+                  <div class="col-md-3 t-a-r"><h6 class="shop-menu-heading">50KM</h6></div>
 
 
-            <!--</div>-->
-            <!--<div class="row">-->
-              <!--<div class="col-md-12">-->
-                <!--<div class="list-group">-->
-                  <!--<h6 class="shop-menu-heading">LOCATION NAME</h6>-->
-                  <!--<a href="javascript:void(0)" class="list-group-item list-group-item-action">-->
-                    <!--<div class="row">-->
-                      <!--<div class="col-md-2">-->
-                        <!--<i class="fa fa-map-marker shop-menu-icon"></i>-->
-                      <!--</div>-->
-                      <!--<div class="col-md-8">-->
-                        <!--<p class="shop-menu-product-name">Whiner and Diner</p>-->
-                        <!--<p class="shop-menu-product-address">Stamfor, CT</p>-->
-                      <!--</div>-->
-                    <!--</div>-->
-                  <!--</a>-->
-                  <!--<a href="javascript:void(0)" class="list-group-item list-group-item-action">-->
-                    <!--<div class="row">-->
-                      <!--<div class="col-md-2">-->
-                        <!--<i class="fa fa-map-marker shop-menu-icon"></i>-->
-                      <!--</div>-->
-                      <!--<div class="col-md-8">-->
-                        <!--<p class="shop-menu-product-name">East Albert</p>-->
-                        <!--<p class="shop-menu-product-address">Lake Receetown</p>-->
-                      <!--</div>-->
-                    <!--</div>-->
-                  <!--</a>-->
-                  <!--<a href="javascript:void(0)" class="list-group-item list-group-item-action">-->
-                    <!--<div class="row">-->
-                      <!--<div class="col-md-2">-->
-                        <!--<i class="fa fa-map-marker shop-menu-icon"></i>-->
-                      <!--</div>-->
-                      <!--<div class="col-md-8">-->
-                        <!--<p class="shop-menu-product-name">Whiner and Diner</p>-->
-                        <!--<p class="shop-menu-product-address">Stamfor, CT</p>-->
-                      <!--</div>-->
-                    <!--</div>-->
-                  <!--</a>-->
-                  <!--<a href="javascript:void(0)" class="list-group-item list-group-item-action list-loadmore">-->
-                    <!--Show All Results-->
-                    <!--<i class="fa fa-angle-right"></i>-->
-                  <!--</a>-->
-                <!--</div>-->
-              <!--</div>-->
-            <!--</div>-->
-          <!--</div>-->
-        <!--</div>-->
-      <!--</div>-->
-      <!--<div id="products" class="right-menu" [ngbCollapse]="isProductCollapsed" (mouseenter)="isProductCollapsed = !isProductCollapsed" (mouseleave)="isProductCollapsed = !isProductCollapsed">-->
-        <!--<div class="card">-->
-          <!--<div class="card-body">-->
-            <!--<h6 class="shop-menu-heading">CATAGORY</h6>-->
-            <!--<div class="row">-->
-              <!--<div class="col-md-12">-->
-                <!--<nav class="nav">-->
-                  <!--<a class="nav-link color-black" href="javascript:void(0)">All</a>-->
-                  <!--<a class="nav-link color-black" href="javascript:void(0)">First</a>-->
-                  <!--<a class="nav-link color-black" href="javascript:void(0)">Second</a>-->
-                  <!--<a class="nav-link color-black" href="javascript:void(0)">Forth</a>-->
-                <!--</nav>-->
-              <!--</div>-->
-            <!--</div>-->
-            <!--<div class="row">-->
-              <!--<div class="col-md-12">-->
-                <!--<h6 class="shop-menu-heading">TAGS</h6>-->
-                <!--<button class="btn tag-btn">TAG ONE</button>-->
-                <!--<button class="btn tag-btn">TAG TWO</button>-->
-                <!--<button class="btn tag-btn">TAG THREE</button>-->
-              <!--</div>-->
-            <!--</div>-->
-            <!--<div class="row m-t">-->
-              <!--<div class="col-md-12">-->
-                <!--<h6 class="shop-menu-heading">STATUS</h6>-->
-                <!--<div class="checkbox checkbox-primary checkbox-inline">-->
-                  <!--<input type="checkbox" id="inlineCheckbox1" value="option1" checked="">-->
-                  <!--<label for="inlineCheckbox1"> PERMOTION </label>-->
-                  <!--<input type="checkbox" id="inlineCheckbox2" value="option1" style="margin-left: 10px">-->
-                  <!--<label for="inlineCheckbox2"> CLEARANCE </label>-->
-                <!--</div>-->
-              <!--</div>-->
-            <!--</div>-->
-            <!--<div class="row m-t">-->
-              <!--<div class="col-md-12">-->
-                <!--<div class="list-group">-->
-                  <!--<a href="javascript:void(0)" class="list-group-item list-group-item-action">-->
-                    <!--<div class="row">-->
-                      <!--<div class="col-md-3">-->
-                        <!--<img src="../../assets/img/gamehandle.jpg" class="img-fluid p-l-15">-->
-                      <!--</div>-->
-                      <!--<div class="col-md-8">-->
-                        <!--<p class="shop-menu-product-name">BRAND NAME WITH PRODUCT NAME</p>-->
-                        <!--<span _ngcontent-c1="" class="featured-product-pirce">599.00 $</span>-->
-                      <!--</div>-->
-                    <!--</div>-->
-                  <!--</a>-->
-                  <!--<a href="javascript:void(0)" class="list-group-item list-group-item-action">-->
-                    <!--<div class="row">-->
-                      <!--<div class="col-md-3">-->
-                        <!--<img src="../../assets/img/gamehandle.jpg" class="img-fluid p-l-15">-->
-                      <!--</div>-->
-                      <!--<div class="col-md-8">-->
-                        <!--<p class="shop-menu-product-name">BRAND NAME WITH PRODUCT NAME</p>-->
-                        <!--<span _ngcontent-c1="" class="featured-product-pirce">599.00 $</span>-->
-                      <!--</div>-->
-                    <!--</div>-->
-                  <!--</a>-->
-                  <!--<a href="javascript:void(0)" class="list-group-item list-group-item-action">-->
-                    <!--<div class="row">-->
-                      <!--<div class="col-md-3">-->
-                        <!--<img src="../../assets/img/gamehandle.jpg" class="img-fluid p-l-15">-->
-                      <!--</div>-->
-                      <!--<div class="col-md-8">-->
-                        <!--<p class="shop-menu-product-name">BRAND NAME WITH PRODUCT NAME</p>-->
-                        <!--<span _ngcontent-c1="" class="featured-product-pirce">599.00 $</span>-->
-                      <!--</div>-->
-                    <!--</div>-->
-                  <!--</a>-->
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="list-group">
+                      <h6 class="shop-menu-heading">LOCATION NAME</h6>
+                      <a href="javascript:void(0)" class="list-group-item list-group-item-action">
+                        <div class="row">
+                          <div class="col-md-2">
+                            <i class="fa fa-map-marker shop-menu-icon"></i>
+                          </div>
+                          <div class="col-md-8">
+                            <p class="shop-menu-product-name">Whiner and Diner</p>
+                            <p class="shop-menu-product-address">Stamfor, CT</p>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="javascript:void(0)" class="list-group-item list-group-item-action">
+                        <div class="row">
+                          <div class="col-md-2">
+                            <i class="fa fa-map-marker shop-menu-icon"></i>
+                          </div>
+                          <div class="col-md-8">
+                            <p class="shop-menu-product-name">East Albert</p>
+                            <p class="shop-menu-product-address">Lake Receetown</p>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="javascript:void(0)" class="list-group-item list-group-item-action">
+                        <div class="row">
+                          <div class="col-md-2">
+                            <i class="fa fa-map-marker shop-menu-icon"></i>
+                          </div>
+                          <div class="col-md-8">
+                            <p class="shop-menu-product-name">Whiner and Diner</p>
+                            <p class="shop-menu-product-address">Stamfor, CT</p>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="javascript:void(0)" class="list-group-item list-group-item-action list-loadmore">
+                        Show All Results
+                        <i class="fa fa-angle-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="products" class="right-menu" [ngbCollapse]="isProductCollapsed" (mouseenter)="isProductCollapsed = !isProductCollapsed" (mouseleave)="isProductCollapsed = !isProductCollapsed">
+            <div class="card">
+              <div class="card-body">
+                <h6 class="shop-menu-heading">CATAGORY</h6>
+                <div class="row">
+                  <div class="col-md-12">
+                    <nav class="nav">
+                      <a class="nav-link color-black" href="javascript:void(0)">All</a>
+                      <a class="nav-link color-black" href="javascript:void(0)">First</a>
+                      <a class="nav-link color-black" href="javascript:void(0)">Second</a>
+                      <a class="nav-link color-black" href="javascript:void(0)">Forth</a>
+                    </nav>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <h6 class="shop-menu-heading">TAGS</h6>
+                    <button class="btn tag-btn">TAG ONE</button>
+                    <button class="btn tag-btn">TAG TWO</button>
+                    <button class="btn tag-btn">TAG THREE</button>
+                  </div>
+                </div>
+                <div class="row m-t">
+                  <div class="col-md-12">
+                    <h6 class="shop-menu-heading">STATUS</h6>
+                    <div class="checkbox checkbox-primary checkbox-inline">
+                      <input type="checkbox" id="inlineCheckbox1" value="option1" checked="">
+                      <label for="inlineCheckbox1"> PERMOTION </label>
+                      <input type="checkbox" id="inlineCheckbox2" value="option1" style="margin-left: 10px">
+                      <label for="inlineCheckbox2"> CLEARANCE </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row m-t">
+                  <div class="col-md-12">
+                    <div class="list-group">
+                      <a href="javascript:void(0)" class="list-group-item list-group-item-action">
+                        <div class="row">
+                          <div class="col-md-3">
+                            <img src="../../assets/img/gamehandle.jpg" class="img-fluid p-l-15">
+                          </div>
+                          <div class="col-md-8">
+                            <p class="shop-menu-product-name">BRAND NAME WITH PRODUCT NAME</p>
+                            <span _ngcontent-c1="" class="featured-product-pirce">599.00 $</span>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="javascript:void(0)" class="list-group-item list-group-item-action">
+                        <div class="row">
+                          <div class="col-md-3">
+                            <img src="../../assets/img/gamehandle.jpg" class="img-fluid p-l-15">
+                          </div>
+                          <div class="col-md-8">
+                            <p class="shop-menu-product-name">BRAND NAME WITH PRODUCT NAME</p>
+                            <span _ngcontent-c1="" class="featured-product-pirce">599.00 $</span>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="javascript:void(0)" class="list-group-item list-group-item-action">
+                        <div class="row">
+                          <div class="col-md-3">
+                            <img src="../../assets/img/gamehandle.jpg" class="img-fluid p-l-15">
+                          </div>
+                          <div class="col-md-8">
+                            <p class="shop-menu-product-name">BRAND NAME WITH PRODUCT NAME</p>
+                            <span _ngcontent-c1="" class="featured-product-pirce">599.00 $</span>
+                          </div>
+                        </div>
+                      </a>
 
-                  <!--<a href="javascript:void(0)" (click)="productsFromCatagory()" class="list-group-item list-group-item-action list-loadmore">-->
-                    <!--Show All Results-->
-                    <!--<i class="fa fa-angle-right"></i>-->
-                  <!--</a>-->
-                <!--</div>-->
+                      <a href="javascript:void(0)" (click)="productsFromCatagory()" class="list-group-item list-group-item-action list-loadmore">
+                        Show All Results
+                        <i class="fa fa-angle-right"></i>
+                      </a>
+                    </div>
 
-              <!--</div>-->
-            <!--</div>-->
+                  </div>
+                </div>
 
-          <!--</div>-->
-        <!--</div>-->
-      <!--</div>-->
-    <!--</div>-->
-    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-4">
-      <input type="text" [ngbTypeahead]="search" (focus)="focus$.next($event.target.value)" (click)="click$.next($event.target.value)" #instance="ngbTypeahead"  class="header-search" placeholder="Search shops, products, location..">
-    </div>
+              </div>
+            </div>
+          </div>
+        </div>
     <div class="col-lg-4 col-md-4 p-l-0-xs col-sm-4 col-6">
       <div data-toggle="buttons">
         <button class="btn btn-rounded btn-green z-index-higher" (click)="cart()"><i class="fa fa-shopping-cart cart-button-icon"></i><span class="cart-button-text"> My cart</span></button>
@@ -221,28 +228,28 @@
       <div class="menu-padding form-inline" id="Menu" ngbDropdownToggle>
         <div ngbDropdownMenu aria-labelledby="Menu" class="col-md-12">
           <div class="col-md-3  border-right d-inline-block p-l-9pc">
-            <button class="dropdown-item">Category One</button>
-            <button class="dropdown-item">Category Two</button>
-            <button class="dropdown-item">Category Three</button>
-            <button class="dropdown-item">Category Four</button>
+            <button class="dropdown-item drop-down-fonts">Category One</button>
+            <button class="dropdown-item drop-down-fonts">Category Two</button>
+            <button class="dropdown-item drop-down-fonts">Category Three</button>
+            <button class="dropdown-item drop-down-fonts">Category Four</button>
           </div>
           <div class="col-md-2  border-right d-inline-block">
-            <button class="dropdown-item">Category Five</button>
-            <button class="dropdown-item">Category Six</button>
-            <button class="dropdown-item">Category Seven</button>
-            <button class="dropdown-item">Category Eight</button>
+            <button class="dropdown-item drop-down-fonts">Category Five</button>
+            <button class="dropdown-item drop-down-fonts">Category Six</button>
+            <button class="dropdown-item drop-down-fonts">Category Seven</button>
+            <button class="dropdown-item drop-down-fonts">Category Eight</button>
           </div>
           <div class="col-md-2  border-right d-inline-block">
-            <button class="dropdown-item">Category Nine</button>
-            <button class="dropdown-item">Category Ten</button>
-            <button class="dropdown-item">Category Eleven</button>
-            <button class="dropdown-item">Category Twelve</button>
+            <button class="dropdown-item drop-down-fonts">Category Nine</button>
+            <button class="dropdown-item drop-down-fonts">Category Ten</button>
+            <button class="dropdown-item drop-down-fonts">Category Eleven</button>
+            <button class="dropdown-item drop-down-fonts">Category Twelve</button>
           </div>
           <div class="col-md-3  d-inline-block">
-            <button class="dropdown-item">Category Thirteen</button>
-            <button class="dropdown-item">Category Fourteen</button>
-            <button class="dropdown-item">Category Fifteen</button>
-            <button class="dropdown-item">Category Sixteen</button>
+            <button class="dropdown-item drop-down-fonts">Category Thirteen</button>
+            <button class="dropdown-item drop-down-fonts">Category Fourteen</button>
+            <button class="dropdown-item drop-down-fonts">Category Fifteen</button>
+            <button class="dropdown-item drop-down-fonts">Category Sixteen</button>
           </div>
         </div>
         <div class="col-md-3 col-sm-3 col-4 t-a-r">
@@ -295,6 +302,6 @@
     <a class="btn btn-block btn-social btn-google">
       <span class="fa fa-google"></span> Login with Google+
     </a>
-    <!--<button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>-->
+    <button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
   </div>
 </ng-template>

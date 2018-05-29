@@ -188,6 +188,56 @@ ul
 .m-20{
   margin: 20px;
 }
+/* ======================= on hover dropdown ====================== */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    /* background-color: #f1f1f1; */
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  border-left: 3px solid #819a49;
+}
+.dropdown-item:hover {
+    color: #16181b;
+    text-decoration: none;
+    background-color: #f8f9fa;
+    border-left: 4px solid green;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+/* ======================= on hover dropdown ====================== */
+
 /*===================================*/
 .checkbox {
   padding-left: 20px;
@@ -490,14 +540,15 @@ ul
     color: #a1a1a1;
     font-size: 10px;
   }
+  .drop-down-fonts{
+    font-size: 12px;
+  }
+  .p-l-9pc{
+    padding-left: 0%;
+  }
 
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .dropdown-menu.show {
-    left: 5px !important;
-    right: 5px !important;
-    width: 50% !important;
-  }
 }
 @media (min-width: 641px) and (max-width: 731px) and (orientation:landscape){
   .logo-height{
