@@ -6,11 +6,6 @@
   background-color: #3b5998;
   border-color: rgba(0,0,0,0.2);
 }
-.dropdown-menu show {
-  left: 5px !important;
-  right: 5px !important;
-  width: 50% !important;
-}
 .logo-height{
   height: 70px !important;
 }
@@ -72,7 +67,7 @@
 }
 .right-menu{
   width: 38%;
-  margin-left: 165px;
+  margin-left: 205px;
   position: fixed;
   z-index: 1;
 }
@@ -93,6 +88,8 @@ ul
   margin-bottom: 0px;
   font-weight: bold;
   padding-top: 5px;
+  font-size: 12px;
+  letter-spacing: 1px;
 }
 .shop-menu-product-address{
   margin-bottom: 0px;
@@ -111,8 +108,9 @@ ul
   padding-left: 15px;
 }
 .shop-menu-heading{
-  color: #eeeeee;
+  color: #dddddd;
   margin-bottom: 15px;
+  font-size: 12px;
 }
 .list-group-item{
   padding: 0px;
@@ -121,6 +119,11 @@ ul
   color: #819a49;
   padding: 10px;
   text-align: right;
+  font-size: 12px;
+  cursor: pointer;
+}
+.font-12{
+  font-size: 12px;
 }
 .slider {
   -webkit-appearance: none;
@@ -155,7 +158,10 @@ ul
   text-align: right;
 }
 .color-black{
-  color: black !important;
+    color: #424242 !important;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 .dropdown-toggle::after{
   display: none;
@@ -189,13 +195,6 @@ ul
   margin: 20px;
 }
 /* ======================= on hover dropdown ====================== */
-.dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-}
 
 .dropdown {
     position: relative;
@@ -204,15 +203,19 @@ ul
 .dropdown-content {
     display: none;
     position: absolute;
-    /* background-color: #f1f1f1; */
     background-color: white;
-    min-width: 160px;
+    min-width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 12PX;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .dropdown-content a {
-    color: black;
+    color: #515356;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -221,26 +224,48 @@ ul
 .dropdown-content a:hover {
   background-color: #ddd;
   border-left: 3px solid #819a49;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
+.dropdown-item {
+    display: block;
+    width: 100%;
+    clear: both;
+    font-weight: 400;
+    color: #515356;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
 .dropdown-item:hover {
-    color: #16181b;
+    color: #515356;
     text-decoration: none;
     background-color: #f8f9fa;
     border-left: 4px solid green;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
-}
 /* ======================= on hover dropdown ====================== */
 
 /*===================================*/
 .checkbox {
-  padding-left: 20px;
+  padding-left: 0px;
 }
 
 .checkbox label {
@@ -527,9 +552,344 @@ ul
   }
   .mt-3 {
     margin-top: 0px !important;
-}
+  }
+  .border-right{
+    border-right: none !important;
+  }
+  /* ======================= on hover dropdown ====================== */
+
+  .dropdown {
+      position: relative;
+  }
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 80px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
+  }
+  .dropdown-content a {
+      color: #515356;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+  }
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    border-left: 3px solid #819a49;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .dropdown-item {
+      display: block;
+      width: 100%;
+      clear: both;
+      font-weight: 400;
+      color: #515356;
+      text-align: inherit;
+      white-space: nowrap;
+      background-color: transparent;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 5px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      padding-left: 4px;
+    }
+  .dropdown-item:hover {
+      color: #515356;
+      text-decoration: none;
+      background-color: #f8f9fa;
+      border-left: 4px solid #819a49;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 5px;
+      font-weight: bold;
+      letter-spacing: 1px;
+  }
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+  .right-menu{
+    width: 38%;
+    margin-left: 82px;
+    position: fixed;
+    z-index: 1;
+  }
+  .shop-menu-heading{
+    color: #dddddd;
+    margin-bottom: 8px;
+    font-size: 7px;
+  }
+  .shop-menu-product-name{
+    margin-bottom: 0px;
+    font-weight: bold;
+    padding-top: 5px;
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+  .shop-menu-product-address{
+    margin-bottom: 0px;
+    color: dimgray;
+    font-size: 8px;
+    padding-bottom: 5px;
+  }
+  .list-loadmore{
+    color: #819a49;
+    padding: 10px;
+    text-align: right;
+    font-size: 5px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .p-l-9pc{
+    padding-left: 2%;
+  }
+  .color-black{
+    color: #424242 !important;
+    font-size: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .tag-btn{
+    border-radius: 30px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: white;
+    border: 1px solid dimgray;
+    font-size: 5px;
+  }
+  .tag-btn:hover{
+    border-radius: 30px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    font-size: 5px;
+  }
+  .font-12{
+    font-size: 9px;
+  }
+  .font-11{
+    font-size: 6px !important;
+  }
+  .p-l-0{
+    padding-left: 0px;
+  }
+  .checkbox {
+    padding-left: 0px;
+  }
+  .shop-menu-icon{
+    display: none;
+  }
+  .extended-menu{
+    padding-left: 3px !important;
+    padding-right: 3px !important;
+  }
+  .list-group-item {
+    padding: 5px;
+  }
+  .p-l-r-0{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .nav-link {
+    display: block;
+    /* padding: .5rem 1rem; */
+    padding: 5px;
+  }
+  .ml-5{
+    margin-left: 0px !important;
+  }
+  .product-img{
+    height: 45px !important;
+    width: 60px !important;
+  }
+
+  /* ======================= on hover dropdown ====================== */
 }
 @media (min-width: 544px) and (max-width: 767px) {
+  /* ======================= on hover dropdown ====================== */
+
+  .dropdown {
+      position: relative;
+  }
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 100px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
+  }
+  .dropdown-content a {
+      color: #515356;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+  }
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    border-left: 3px solid #819a49;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .dropdown-item {
+      display: block;
+      width: 100%;
+      clear: both;
+      font-weight: 400;
+      color: #515356;
+      text-align: inherit;
+      white-space: nowrap;
+      background-color: transparent;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 5px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      padding-left: 10px;
+    }
+  .dropdown-item:hover {
+      color: #515356;
+      text-decoration: none;
+      background-color: #f8f9fa;
+      border-left: 4px solid #819a49;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 5px;
+      font-weight: bold;
+      letter-spacing: 1px;
+  }
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+  .right-menu{
+    width: 38%;
+    margin-left: 103px;
+    position: fixed;
+    z-index: 1;
+  }
+  .shop-menu-heading{
+    color: #dddddd;
+    margin-bottom: 8px;
+    font-size: 7px;
+  }
+  .shop-menu-product-name{
+    margin-bottom: 0px;
+    font-weight: bold;
+    padding-top: 5px;
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+  .shop-menu-product-address{
+    margin-bottom: 0px;
+    color: dimgray;
+    font-size: 8px;
+    padding-bottom: 5px;
+  }
+  .list-loadmore{
+    color: #819a49;
+    padding: 10px;
+    text-align: right;
+    font-size: 5px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .p-l-9pc{
+    padding-left: 2%;
+  }
+  .color-black{
+    color: #424242 !important;
+    font-size: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .tag-btn{
+    border-radius: 30px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: white;
+    border: 1px solid dimgray;
+    font-size: 5px;
+  }
+  .tag-btn:hover{
+    border-radius: 30px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    font-size: 5px;
+  }
+  .font-12{
+    font-size: 9px;
+  }
+  .font-11{
+    font-size: 6px !important;
+  }
+  .p-l-0{
+    padding-left: 0px;
+  }
+  .checkbox {
+    padding-left: 0px;
+  }
+  .shop-menu-icon{
+    display: none;
+  }
+  .extended-menu{
+    padding-left: 3px !important;
+    padding-right: 3px !important;
+  }
+  .list-group-item {
+    padding: 5px;
+  }
+  .p-l-r-0{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .nav-link {
+    display: block;
+    /* padding: .5rem 1rem; */
+    padding: 5px;
+  }
+  .ml-5{
+    margin-left: 0px !important;
+  }
+  .product-img{
+    height: 45px !important;
+    width: 60px !important;
+  }
+
+  /* ======================= on hover dropdown ====================== */
 
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -546,9 +906,293 @@ ul
   .p-l-9pc{
     padding-left: 0%;
   }
+  /* ======================= on hover dropdown ====================== */
+
+  .dropdown {
+      position: relative;
+  }
+
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 180px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-size: 12PX;
+      font-weight: bold;
+      letter-spacing: 1px;
+  }
+
+  .dropdown-content a {
+      color: #515356;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    border-left: 3px solid #819a49;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .dropdown-item {
+      display: block;
+      width: 100%;
+      clear: both;
+      font-weight: 400;
+      color: #515356;
+      text-align: inherit;
+      white-space: nowrap;
+      background-color: transparent;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-size: 10px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+  .dropdown-item:hover {
+      color: #515356;
+      text-decoration: none;
+      background-color: #f8f9fa;
+      border-left: 4px solid #819a49;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
+  }
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+  .right-menu{
+    width: 38%;
+    margin-left: 185px;
+    position: fixed;
+    z-index: 1;
+  }
+  .shop-menu-heading{
+    color: #dddddd;
+    margin-bottom: 8px;
+    font-size: 12px;
+  }
+  .shop-menu-product-name{
+    margin-bottom: 0px;
+    font-weight: bold;
+    padding-top: 5px;
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+  .shop-menu-product-address{
+    margin-bottom: 0px;
+    color: dimgray;
+    font-size: 11px;
+    padding-bottom: 5px;
+  }
+  .list-loadmore{
+    color: #819a49;
+    padding: 10px;
+    text-align: right;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .p-l-9pc{
+    padding-left: 2%;
+  }
+  .color-black{
+    color: #424242 !important;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .tag-btn{
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: white;
+    border: 1px solid dimgray;
+    font-size: 9px;
+  }
+  .tag-btn:hover{
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    font-size: 12px;
+  }
+  .font-12{
+    font-size: 11px;
+  }
+  .font-11{
+    font-size: 10px !important;
+  }
+  .p-l-0{
+    padding-left: 0px;
+  }
+  .checkbox {
+    padding-left: 0px;
+  }
+
+  /* ======================= on hover dropdown ====================== */
 
 }
 @media (min-width: 992px) and (max-width: 1199px) {
+  /* ======================= on hover dropdown ====================== */
+
+  .dropdown {
+      position: relative;
+  }
+
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 200px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-size: 12PX;
+      font-weight: bold;
+      letter-spacing: 1px;
+  }
+
+  .dropdown-content a {
+      color: #515356;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    border-left: 3px solid #819a49;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .dropdown-item {
+      display: block;
+      width: 100%;
+      clear: both;
+      font-weight: 400;
+      color: #515356;
+      text-align: inherit;
+      white-space: nowrap;
+      background-color: transparent;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+  .dropdown-item:hover {
+      color: #515356;
+      text-decoration: none;
+      background-color: #f8f9fa;
+      border-left: 4px solid #819a49;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
+  }
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+  .right-menu{
+    width: 38%;
+    margin-left: 205px;
+    position: fixed;
+    z-index: 1;
+  }
+  .shop-menu-heading{
+    color: #dddddd;
+    margin-bottom: 8px;
+    font-size: 12px;
+  }
+  .shop-menu-product-name{
+    margin-bottom: 0px;
+    font-weight: bold;
+    padding-top: 5px;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  .shop-menu-product-address{
+    margin-bottom: 0px;
+    color: dimgray;
+    font-size: 12px;
+    padding-bottom: 5px;
+  }
+  .list-loadmore{
+    color: #819a49;
+    padding: 10px;
+    text-align: right;
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .p-l-9pc{
+    padding-left: 2%;
+  }
+  .color-black{
+    color: #424242 !important;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .tag-btn{
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: white;
+    border: 1px solid dimgray;
+    font-size: 12px;
+  }
+  .tag-btn:hover{
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    font-size: 12px;
+  }
+  .font-12{
+    font-size: 12px;
+  }
+  .font-11{
+    font-size: 11px !important;
+  }
+  .p-l-0{
+    padding-left: 0px;
+  }
+  .checkbox {
+    padding-left: 0px;
+  }
+
+  /* ======================= on hover dropdown ====================== */
 }
 @media (min-width: 641px) and (max-width: 731px) and (orientation:landscape){
   .logo-height{
@@ -563,5 +1207,171 @@ ul
   }
   .mt-3 {
     margin-top: 0px !important;
-}
+  }
+  /* ======================= on hover dropdown ====================== */
+
+  .dropdown {
+      position: relative;
+  }
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 80px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
+  }
+  .dropdown-content a {
+      color: #515356;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+  }
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    border-left: 3px solid #819a49;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .dropdown-item {
+      display: block;
+      width: 100%;
+      clear: both;
+      font-weight: 400;
+      color: #515356;
+      text-align: inherit;
+      white-space: nowrap;
+      background-color: transparent;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 5px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      padding-left: 4px;
+    }
+  .dropdown-item:hover {
+      color: #515356;
+      text-decoration: none;
+      background-color: #f8f9fa;
+      border-left: 4px solid #819a49;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 5px;
+      font-weight: bold;
+      letter-spacing: 1px;
+  }
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+  .right-menu{
+    width: 38%;
+    margin-left: 82px;
+    position: fixed;
+    z-index: 1;
+  }
+  .shop-menu-heading{
+    color: #dddddd;
+    margin-bottom: 8px;
+    font-size: 7px;
+  }
+  .shop-menu-product-name{
+    margin-bottom: 0px;
+    font-weight: bold;
+    padding-top: 5px;
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+  .shop-menu-product-address{
+    margin-bottom: 0px;
+    color: dimgray;
+    font-size: 8px;
+    padding-bottom: 5px;
+  }
+  .list-loadmore{
+    color: #819a49;
+    padding: 10px;
+    text-align: right;
+    font-size: 5px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .p-l-9pc{
+    padding-left: 2%;
+  }
+  .color-black{
+    color: #424242 !important;
+    font-size: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .tag-btn{
+    border-radius: 30px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: white;
+    border: 1px solid dimgray;
+    font-size: 5px;
+  }
+  .tag-btn:hover{
+    border-radius: 30px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    font-size: 5px;
+  }
+  .font-12{
+    font-size: 9px;
+  }
+  .font-11{
+    font-size: 6px !important;
+  }
+  .p-l-0{
+    padding-left: 0px;
+  }
+  .checkbox {
+    padding-left: 0px;
+  }
+  .shop-menu-icon{
+    display: none;
+  }
+  .extended-menu{
+    padding-left: 3px !important;
+    padding-right: 3px !important;
+  }
+  .list-group-item {
+    padding: 5px;
+  }
+  .p-l-r-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .nav-link {
+    display: block;
+    /* padding: .5rem 1rem; */
+    padding: 5px;
+  }
+  .ml-5{
+    margin-left: 0px !important;
+  }
+  .product-img{
+    height: 45px !important;
+    width: 60px !important;
+  }
+
+  /* ======================= on hover dropdown ====================== */
 }

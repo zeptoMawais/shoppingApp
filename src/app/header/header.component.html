@@ -18,22 +18,22 @@
           <div class="dropdown">
             <input type="text" class="header-search" placeholder="Search shops, products, location..">
             <div class="dropdown-content">
-              <button class="dropdown-item" (mouseenter)="isShopCollapsed = !isShopCollapsed" (mouseleave)="isShopCollapsed = !isShopCollapsed" [attr.aria-expanded]="!isShopCollapsed" aria-controls="shops">Shops</button>
-              <button class="dropdown-item" (mouseenter)="isLocationCollapsed = !isLocationCollapsed" (mouseleave)="isLocationCollapsed = !isLocationCollapsed" [attr.aria-expanded]="!isLocationCollapsed" aria-controls="shops-location">Shops Location</button>
-              <button class="dropdown-item" (mouseenter)="isProductCollapsed = !isProductCollapsed" (mouseleave)="isProductCollapsed = !isProductCollapsed" [attr.aria-expanded]="!isProductCollapsed" aria-controls="products">Products</button>
+              <button class="dropdown-item" (mouseenter)="isShopCollapsed = !isShopCollapsed" (mouseleave)="isShopCollapsed = !isShopCollapsed" [attr.aria-expanded]="!isShopCollapsed" aria-controls="shops">SHOPS</button>
+              <button class="dropdown-item" (mouseenter)="isLocationCollapsed = !isLocationCollapsed" (mouseleave)="isLocationCollapsed = !isLocationCollapsed" [attr.aria-expanded]="!isLocationCollapsed" aria-controls="shops-location">SHOPS LOCAION</button>
+              <button class="dropdown-item" (mouseenter)="isProductCollapsed = !isProductCollapsed" (mouseleave)="isProductCollapsed = !isProductCollapsed" [attr.aria-expanded]="!isProductCollapsed" aria-controls="products">PRODUCTS</button>
             </div>
           </div>
           <div id="shops" class="right-menu" [ngbCollapse]="isShopCollapsed" (mouseenter)="isShopCollapsed = !isShopCollapsed" (mouseleave)="isShopCollapsed = !isShopCollapsed">
             <div class="card">
-              <div class="card-body ">
+              <div class="card-body extended-menu">
                 <div class="list-group">
                   <h6 class="shop-menu-heading">SHOP NAME</h6>
                   <a href="javascript:void(0)" class="list-group-item list-group-item-action">
                     <div class="row">
-                      <div class="col-md-2">
+                      <div class="col-md-2 col-0">
                         <i class="fa fa-building shop-menu-icon"></i>
                       </div>
-                      <div class="col-md-8">
+                      <div class="col-md-8 col-12">
                         <p class="shop-menu-product-name">Whiner and Diner</p>
                         <p class="shop-menu-product-address">Stamfor, CT</p>
                       </div>
@@ -62,7 +62,7 @@
                     </div>
                   </a>
                   <a href="javascript:void(0)" (click)="shopSearchResult()" class="list-group-item list-group-item-action list-loadmore">
-                    Show All Results
+                    SHOW ALL RESULTS
                     <i class="fa fa-angle-right"></i>
                   </a>
                 </div>
@@ -71,23 +71,21 @@
           </div>
           <div id="shops-location" class="right-menu" [ngbCollapse]="isLocationCollapsed" (mouseenter)="isLocationCollapsed = !isLocationCollapsed" (mouseleave)="isLocationCollapsed = !isLocationCollapsed">
             <div class="card">
-              <div class="card-body">
+              <div class="card-body p-l-r-0">
                 <h6 class="shop-menu-heading">WITHIN A RADIUS</h6>
                 <div class="slidecontainer">
                   <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
                 </div>
                 <div class="row m-t">
-                  <div class="col-md-3">
+                  <div class="col-md-3 col-3 p-l-r-0">
                     <h6 class="shop-menu-heading">0KM</h6>
                   </div>
-                  <div class="col-md-3"><h6 class="shop-menu-heading">1KM</h6></div>
-                  <div class="col-md-3"><h6 class="shop-menu-heading">5KM</h6></div>
-                  <div class="col-md-3 t-a-r"><h6 class="shop-menu-heading">50KM</h6></div>
-
-
+                  <div class="col-md-3 col-3 p-l-r-0"><h6 class="shop-menu-heading">1KM</h6></div>
+                  <div class="col-md-3 col-3 p-l-r-0"><h6 class="shop-menu-heading">5KM</h6></div>
+                  <div class="col-md-3 col-3 p-l-r-0 t-a-r"><h6 class="shop-menu-heading">50KM</h6></div>
                 </div>
                 <div class="row">
-                  <div class="col-md-12">
+                  <div class="col-md-12 p-l-r-0">
                     <div class="list-group">
                       <h6 class="shop-menu-heading">LOCATION NAME</h6>
                       <a href="javascript:void(0)" class="list-group-item list-group-item-action">
@@ -124,7 +122,7 @@
                         </div>
                       </a>
                       <a href="javascript:void(0)" class="list-group-item list-group-item-action list-loadmore">
-                        Show All Results
+                        SHOW ALL RESULTS
                         <i class="fa fa-angle-right"></i>
                       </a>
                     </div>
@@ -138,7 +136,7 @@
               <div class="card-body">
                 <h6 class="shop-menu-heading">CATAGORY</h6>
                 <div class="row">
-                  <div class="col-md-12">
+                  <div class="col-md-12 pl-0">
                     <nav class="nav">
                       <a class="nav-link color-black" href="javascript:void(0)">All</a>
                       <a class="nav-link color-black" href="javascript:void(0)">First</a>
@@ -160,51 +158,51 @@
                     <h6 class="shop-menu-heading">STATUS</h6>
                     <div class="checkbox checkbox-primary checkbox-inline">
                       <input type="checkbox" id="inlineCheckbox1" value="option1" checked="">
-                      <label for="inlineCheckbox1"> PERMOTION </label>
-                      <input type="checkbox" id="inlineCheckbox2" value="option1" style="margin-left: 10px">
-                      <label for="inlineCheckbox2"> CLEARANCE </label>
+                      <label for="inlineCheckbox1" class="font-12"> PERMOTION </label>
+                      <input type="checkbox" class="ml-5" id="inlineCheckbox2" value="option1">
+                      <label for="inlineCheckbox2" class="font-12"> CLEARANCE </label>
                     </div>
                   </div>
                 </div>
                 <div class="row m-t">
-                  <div class="col-md-12">
+                  <div class="col-md-12 pl-0 pr-0">
                     <div class="list-group">
                       <a href="javascript:void(0)" class="list-group-item list-group-item-action">
                         <div class="row">
-                          <div class="col-md-3">
-                            <img src="../../assets/img/gamehandle.jpg" class="img-fluid p-l-15">
+                          <div class="col-md-3 col-12">
+                            <img src="../../assets/img/gamehandle.jpg" class="img-fluid product-img p-l-15">
                           </div>
-                          <div class="col-md-8">
-                            <p class="shop-menu-product-name">BRAND NAME WITH PRODUCT NAME</p>
-                            <span _ngcontent-c1="" class="featured-product-pirce">599.00 $</span>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="javascript:void(0)" class="list-group-item list-group-item-action">
-                        <div class="row">
-                          <div class="col-md-3">
-                            <img src="../../assets/img/gamehandle.jpg" class="img-fluid p-l-15">
-                          </div>
-                          <div class="col-md-8">
-                            <p class="shop-menu-product-name">BRAND NAME WITH PRODUCT NAME</p>
-                            <span _ngcontent-c1="" class="featured-product-pirce">599.00 $</span>
+                          <div class="col-md-8 col-12">
+                            <p class="shop-menu-product-name font-11">BRAND NAME WITH PRODUCT NAME</p>
+                            <span _ngcontent-c1="" class="featured-product-pirce font-12 p-l-0">599.00 $</span>
                           </div>
                         </div>
                       </a>
                       <a href="javascript:void(0)" class="list-group-item list-group-item-action">
                         <div class="row">
-                          <div class="col-md-3">
-                            <img src="../../assets/img/gamehandle.jpg" class="img-fluid p-l-15">
+                          <div class="col-md-3 col-12">
+                            <img src="../../assets/img/gamehandle.jpg" class="img-fluid product-img p-l-15">
                           </div>
-                          <div class="col-md-8">
-                            <p class="shop-menu-product-name">BRAND NAME WITH PRODUCT NAME</p>
-                            <span _ngcontent-c1="" class="featured-product-pirce">599.00 $</span>
+                          <div class="col-md-8 col-12">
+                            <p class="shop-menu-product-name font-11">BRAND NAME WITH PRODUCT NAME</p>
+                            <span _ngcontent-c1="" class="featured-product-pirce font-12 p-l-0">599.00 $</span>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="javascript:void(0)" class="list-group-item list-group-item-action">
+                        <div class="row">
+                          <div class="col-md-3 col-12">
+                            <img src="../../assets/img/gamehandle.jpg" class="img-fluid product-img p-l-15">
+                          </div>
+                          <div class="col-md-8 col-12">
+                            <p class="shop-menu-product-name font-11">BRAND NAME WITH PRODUCT NAME</p>
+                            <span _ngcontent-c1="" class="featured-product-pirce font-12 p-l-0">599.00 $</span>
                           </div>
                         </div>
                       </a>
 
                       <a href="javascript:void(0)" (click)="productsFromCatagory()" class="list-group-item list-group-item-action list-loadmore">
-                        Show All Results
+                        SHOW ALL RESULTS
                         <i class="fa fa-angle-right"></i>
                       </a>
                     </div>
@@ -227,25 +225,25 @@
     <div ngbDropdown>
       <div class="menu-padding form-inline" id="Menu" ngbDropdownToggle>
         <div ngbDropdownMenu aria-labelledby="Menu" class="col-md-12">
-          <div class="col-md-3  border-right d-inline-block p-l-9pc">
+          <div class="col-md-3 col-2 border-right d-inline-block p-l-9pc">
             <button class="dropdown-item drop-down-fonts">Category One</button>
             <button class="dropdown-item drop-down-fonts">Category Two</button>
             <button class="dropdown-item drop-down-fonts">Category Three</button>
             <button class="dropdown-item drop-down-fonts">Category Four</button>
           </div>
-          <div class="col-md-2  border-right d-inline-block">
+          <div class="col-md-2 col-2 border-right d-inline-block">
             <button class="dropdown-item drop-down-fonts">Category Five</button>
             <button class="dropdown-item drop-down-fonts">Category Six</button>
             <button class="dropdown-item drop-down-fonts">Category Seven</button>
             <button class="dropdown-item drop-down-fonts">Category Eight</button>
           </div>
-          <div class="col-md-2  border-right d-inline-block">
+          <div class="col-md-2 col-2  border-right d-inline-block">
             <button class="dropdown-item drop-down-fonts">Category Nine</button>
             <button class="dropdown-item drop-down-fonts">Category Ten</button>
             <button class="dropdown-item drop-down-fonts">Category Eleven</button>
             <button class="dropdown-item drop-down-fonts">Category Twelve</button>
           </div>
-          <div class="col-md-3  d-inline-block">
+          <div class="col-md-3 col-2  d-inline-block">
             <button class="dropdown-item drop-down-fonts">Category Thirteen</button>
             <button class="dropdown-item drop-down-fonts">Category Fourteen</button>
             <button class="dropdown-item drop-down-fonts">Category Fifteen</button>
