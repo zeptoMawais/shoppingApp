@@ -549,7 +549,7 @@ hr{
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .p-r-100px{
-    padding-right: 75px;
+    padding-right: 65px;
   }
 }
 @media (min-width: 576px) and (max-width: 640px) and (orientation:landscape){
